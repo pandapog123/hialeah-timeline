@@ -6,6 +6,12 @@ The official TSA submission for web-master
 
 This is ....
 
+## Technologies used
+
+- Vite
+- React
+-
+
 ## References
 
 - reference 1
