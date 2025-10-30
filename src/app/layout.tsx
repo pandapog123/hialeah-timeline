@@ -11,7 +11,10 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Gardens Connect",
+  title: {
+    default: "Gardens Connect",
+    template: "%s | Gardens Connect",
+  },
   description: "Connecting Hialeah Gardens to local resources.",
 };
 
