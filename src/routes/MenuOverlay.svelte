@@ -11,7 +11,7 @@
 <div
   class="menu-overlay"
   class:shown={$showMenu}
-  aria-hidden={!$showMenu}
+  aria-hidden={$showMenu}
   inert={!$showMenu}
 >
   <div class="links">
@@ -100,7 +100,7 @@
     height: 100vh;
     opacity: 0;
     pointer-events: none;
-    z-index: 10;
+    z-index: 30;
 
     transition: opacity 100ms ease-in-out;
 

@@ -26,11 +26,10 @@
   {/if}
 </svelte:head>
 
-<MenuOverlay {showMenu} />
-
 <header inert={$showMenu}>
   <a href="/">
-    <h1>Gardens Connect</h1>
+    <img src="/branding/Logo-light.png" alt="Gardens Connect Logo" />
+    <!-- <h1>Gardens Connect</h1> -->
   </a>
 
   <ul>
@@ -64,11 +63,11 @@
   </button>
 </header>
 
-<main>
+<main inert={$showMenu}>
   {@render children()}
 </main>
 
-<footer>
+<footer inert={$showMenu}>
   <section class="footer-links">
     <ul>
       <h1>Resources</h1>
@@ -95,6 +94,8 @@
 
   <p class="footer-copyright">© 2025, Gardens Connect • Established 2025</p>
 </footer>
+
+<MenuOverlay {showMenu} />
 
 <style>
   :global(body) {
@@ -123,9 +124,25 @@
     display: flex;
     background: var(--primary);
     color: var(--off-neutral);
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     justify-content: space-between;
     align-items: center;
+  }
+
+  header > a img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  header > a {
+    display: flex;
+
+    align-items: center;
+    gap: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.25rem;
   }
 
   header ul {
