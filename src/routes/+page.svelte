@@ -224,7 +224,12 @@
       flex: 0 auto;
     }
   }
-
+  @media (min-width: 800px) {
+    .hero {
+      padding: 10rem 10rem;
+      padding-bottom: 13rem;
+    }
+  }
   /* #endregion */
 
   /* #region resources */
