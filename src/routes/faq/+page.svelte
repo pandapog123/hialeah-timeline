@@ -13,7 +13,7 @@
     {#each data.faqs as faq, i}
       <li class:selected={i === currentFAQ}>
         <button
-          onclick={() => {
+          on:click={() => {
             if (currentFAQ === i) {
               currentFAQ = undefined;
             } else {

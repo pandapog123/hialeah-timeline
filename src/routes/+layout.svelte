@@ -25,79 +25,85 @@
   {/if}
 </svelte:head>
 
-<header inert={$showMenu}>
-  <a href="/">
-    <img src="/branding/Logo-light.png" alt="Gardens Connect Logo" />
-    <!-- <h1>Gardens Connect</h1> -->
-  </a>
+<div class="layout">
+  <header inert={$showMenu}>
+    <a href="/">
+      <img src="/branding/Logo-light.png" alt="Gardens Connect Logo" />
+      <h1>Gardens Connect</h1>
+    </a>
 
-  <ul>
-    <li><a href="/resources">Resources</a></li>
-    <li><a href="/events">Events</a></li>
-    <li><a href="/faq">FAQ</a></li>
-    <li><a href="/contact">Contact</a></li>
-    <li><a href="/references">Reference Page</a></li>
-  </ul>
-
-  <button
-    aria-label="toggle-menu"
-    on:click={() => {
-      $showMenu = true;
-    }}
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="currentColor"
-      class="size-6"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
-      />
-    </svg>
-  </button>
-</header>
-
-<main inert={$showMenu}>
-  {@render children()}
-</main>
-
-<footer inert={$showMenu}>
-  <section class="footer-links">
     <ul>
-      <h1>Resources</h1>
-      <hr />
-      <li><a href="/">Home</a></li>
       <li><a href="/resources">Resources</a></li>
       <li><a href="/events">Events</a></li>
       <li><a href="/faq">FAQ</a></li>
       <li><a href="/contact">Contact</a></li>
       <li><a href="/references">Reference Page</a></li>
     </ul>
-    <ul>
-      <h1>Information</h1>
-      <hr />
-      <li>
-        <p class="footer-address">
-          Hialeah Gardens, FL | 10001 NW 87 Avenue, Hialeah Gardens, FL 33016
-        </p>
-      </li>
-      <li><a href="tel:305-558-4114">(305) 558-4114</a></li>
-    </ul>
-  </section>
 
-  <hr />
+    <button
+      aria-label="toggle-menu"
+      on:click={() => {
+        $showMenu = true;
+      }}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+        />
+      </svg>
+    </button>
+  </header>
 
-  <p class="footer-copyright">© 2025, Gardens Connect • Established 2025</p>
-</footer>
+  <main inert={$showMenu}>
+    {@render children()}
+  </main>
+
+  <footer inert={$showMenu}>
+    <section class="footer-links">
+      <ul>
+        <h1>Resources</h1>
+        <hr />
+        <li><a href="/">Home</a></li>
+        <li><a href="/resources">Resources</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/references">Reference Page</a></li>
+      </ul>
+      <ul>
+        <h1>Information</h1>
+        <hr />
+        <li>
+          <p class="footer-address">
+            Hialeah Gardens, FL | 10001 NW 87 Avenue, Hialeah Gardens, FL 33016
+          </p>
+        </li>
+        <li><a href="tel:305-558-4114">(305) 558-4114</a></li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <p class="footer-copyright">© 2025, Gardens Connect • Established 2025</p>
+  </footer>
+</div>
 
 <MenuOverlay {showMenu} />
 
 <style>
+  :global(html, body) {
+    height: 100%;
+  }
+
   :global(body) {
     --neutral: #000;
     --off-neutral: #fff;
@@ -121,7 +127,16 @@
     list-style-type: none;
   }
 
-  /* #region header */
+  .layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1;
+  }
+
   header {
     display: flex;
     background: var(--primary);
