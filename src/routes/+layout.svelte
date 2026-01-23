@@ -72,6 +72,7 @@
       <h1>Resources</h1>
       <hr />
       <li><a href="/">Home</a></li>
+      <li><a href="/resources">Resources</a></li>
       <li><a href="/events">Events</a></li>
       <li><a href="/faq">FAQ</a></li>
       <li><a href="/contact">Contact</a></li>
@@ -108,6 +109,8 @@
     margin: 0;
     font-family: "Raleway", sans-serif;
     background-color: var(--off-neutral);
+
+    overflow-x: hidden;
   }
 
   * {
