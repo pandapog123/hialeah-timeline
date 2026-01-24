@@ -3,6 +3,7 @@
   import { CommunityEvents, CommunityEventTags } from "$lib/store/events";
   import { onDestroy, onMount, tick } from "svelte";
   import { fade } from "svelte/transition";
+  import DatePicker from "./DatePicker.svelte";
 
   let searchInput = $state("");
 
@@ -174,7 +175,6 @@
         </button>
 
         {#if showCategoriesSelect}
-          <!-- content here -->
           <!-- svelte-ignore a11y_click_events_have_key_events -->
           <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
           <ul
@@ -200,24 +200,6 @@
                   }}
                   class:selected={searchCategories.includes(tag)}>{tag}</button
                 >
-                <!-- <label for={tag}>
-                  <input
-                    type="checkbox"
-                    name={tag}
-                    id={tag}
-                    checked={searchCategories.includes(tag)}
-                    onchange={(e) => {
-                      if ((e.target as HTMLInputElement).checked) {
-                        searchCategories.push(tag);
-                      } else {
-                        searchCategories = searchCategories.filter(
-                          (v) => v !== tag,
-                        );
-                      }
-                    }}
-                  />
-                  <span>{tag}</span>
-                </label> -->
               </li>
             {/each}
           </ul>
@@ -235,8 +217,27 @@
           <span>
             {#if dateFilter.length === 0}
               Date
+            {:else if dateFilter.length === 1}
+              {dateFilter[0].getDate() === new Date().getDate()
+                ? "Today"
+                : dateFilter[0].toLocaleDateString("en-US", {
+                    weekday: "short",
+                    year: "numeric",
+                    month: "short",
+                    day: "2-digit",
+                  })}
             {:else}
-              {dateFilter.length} Selected
+              {dateFilter[0].toLocaleDateString("en-US", {
+                // weekday: "short",
+                // year: "numeric",
+                // month: "short",
+                // day: "2-digit",
+              })} - {dateFilter[1].toLocaleDateString("en-US", {
+                // weekday: "short",
+                // year: "numeric",
+                // month: "short",
+                // day: "2-digit",
+              })}
             {/if}
           </span>
 
@@ -254,14 +255,22 @@
           </svg>
         </button>
 
+        <!-- svelte-ignore a11y_no_static_element_interactions -->
+        <!-- svelte-ignore a11y_click_events_have_key_events -->
         {#if showDateFilter}
           <div
             onclick={(e) => e.stopPropagation()}
             bind:this={dateBoxElement}
             class="date-box"
             class:overflowing-db={isDateBoxOverflowing}
+            transition:fade={{ duration: 75 }}
           >
-            Date Picker Component Box
+            <DatePicker
+              currentDates={dateFilter}
+              onChange={(dates) => {
+                dateFilter = dates;
+              }}
+            />
           </div>
         {/if}
       </div>
@@ -341,6 +350,7 @@
     width: 1rem;
     height: 1rem;
     font-weight: 900;
+    display: block;
   }
 
   .search input {
@@ -401,7 +411,7 @@
     top: 115%;
 
     /* left: 0; */
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     min-width: 100%;
 
     background-color: var(--off-neutral);
@@ -414,6 +424,10 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  .category-box {
+    padding: 0.5rem;
   }
 
   .category-box button {
@@ -430,6 +444,13 @@
     color: var(--off-neutral);
   }
 
+  .category-box,
+  .date-box {
+    max-height: 18rem;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+
   .category-box.overflowing-cb,
   .date-box.overflowing-db {
     right: 0;
@@ -438,13 +459,6 @@
   .category-box h2 {
     font-weight: 600;
     font-size: 1.2rem;
-  }
-
-  /* TEMP */
-  .date-box {
-    white-space: nowrap;
-    padding: 0;
-    overflow: hidden;
   }
 
   @media (max-width: 400px) {
