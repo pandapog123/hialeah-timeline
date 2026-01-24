@@ -2,7 +2,6 @@
   import { browser } from "$app/environment";
   import { CommunityEvents, CommunityEventTags } from "$lib/store/events";
   import { onDestroy, onMount, tick } from "svelte";
-  import { stopPropagation } from "svelte/legacy";
   import { fade } from "svelte/transition";
 
   let searchInput = $state("");
@@ -17,27 +16,33 @@
 
   function handleCategorySelect() {
     showCategoriesSelect = !showCategoriesSelect;
+    showDateFilter = false;
   }
 
   function handleDateFilter() {
     showDateFilter = !showDateFilter;
+    showCategoriesSelect = false;
   }
 
   function isOverflowingX(el: HTMLElement) {
     const rect = el.getBoundingClientRect();
 
+    console.log();
+
     return rect.left < 0 || rect.right > window.innerWidth;
   }
 
   let categoryBoxElement: HTMLElement | undefined = $state();
+  let dateBoxElement: HTMLElement | undefined = $state();
 
-  let windowWidth = $state(0);
+  let windowWidth = $state(browser ? window.innerWidth : 0);
 
   const onResize = async () => {
     if (window) {
       await tick();
 
       isCategoryBoxOverflowing = false;
+      isDateBoxOverflowing = false;
 
       await tick();
 
@@ -45,17 +50,33 @@
     }
   };
 
-  let isCategoryBoxOverflowing = $derived(
-    (() => {
-      if (!categoryBoxElement) {
-        return false;
-      }
+  let isCategoryBoxOverflowing = $state(true);
 
-      windowWidth;
+  $effect(() => {
+    if (!categoryBoxElement) {
+      isCategoryBoxOverflowing = false;
 
-      return isOverflowingX(categoryBoxElement);
-    })(),
-  );
+      return;
+    }
+
+    windowWidth;
+
+    isCategoryBoxOverflowing = isOverflowingX(categoryBoxElement);
+  });
+
+  let isDateBoxOverflowing = $state(true);
+
+  $effect(() => {
+    if (!dateBoxElement) {
+      isDateBoxOverflowing = false;
+
+      return;
+    }
+
+    windowWidth;
+
+    isDateBoxOverflowing = isOverflowingX(dateBoxElement);
+  });
 
   function dismissInputs() {
     showCategoriesSelect = false;
@@ -73,6 +94,14 @@
     }
   });
 </script>
+
+<div>
+  <div>EXPERIMENTAL:</div>
+
+  <div>Search: {searchInput}</div>
+  <div>Category Filter: {searchCategories}</div>
+  <div>Date Filter: {dateFilter}</div>
+</div>
 
 <div class="events">
   <section class="header">
@@ -146,6 +175,8 @@
 
         {#if showCategoriesSelect}
           <!-- content here -->
+          <!-- svelte-ignore a11y_click_events_have_key_events -->
+          <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
           <ul
             onclick={(e) => e.stopPropagation()}
             bind:this={categoryBoxElement}
@@ -155,11 +186,21 @@
           >
             <li><h2>Filter Categories</h2></li>
 
-            <hr />
-
             {#each CommunityEventTags as tag}
               <li>
-                <label for={tag}>
+                <button
+                  onclick={() => {
+                    if (!searchCategories.includes(tag)) {
+                      searchCategories.push(tag);
+                    } else {
+                      searchCategories = searchCategories.filter(
+                        (v) => v !== tag,
+                      );
+                    }
+                  }}
+                  class:selected={searchCategories.includes(tag)}>{tag}</button
+                >
+                <!-- <label for={tag}>
                   <input
                     type="checkbox"
                     name={tag}
@@ -176,7 +217,7 @@
                     }}
                   />
                   <span>{tag}</span>
-                </label>
+                </label> -->
               </li>
             {/each}
           </ul>
@@ -184,7 +225,13 @@
       </div>
 
       <div class="secondary-filter-wrapper">
-        <button class="date-filter" onclick={handleDateFilter}>
+        <button
+          class="date-filter"
+          onclick={(e) => {
+            e.stopPropagation();
+            handleDateFilter();
+          }}
+        >
           <span>
             {#if dateFilter.length === 0}
               Date
@@ -206,6 +253,17 @@
             />
           </svg>
         </button>
+
+        {#if showDateFilter}
+          <div
+            onclick={(e) => e.stopPropagation()}
+            bind:this={dateBoxElement}
+            class="date-box"
+            class:overflowing-db={isDateBoxOverflowing}
+          >
+            Date Picker Component Box
+          </div>
+        {/if}
       </div>
     </div>
   </section>
@@ -337,9 +395,10 @@
     position: relative;
   }
 
-  .category-box {
+  .category-box,
+  .date-box {
     position: absolute;
-    top: 110%;
+    top: 115%;
 
     /* left: 0; */
     padding: 0.5rem;
@@ -354,25 +413,25 @@
 
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 0.5rem;
   }
 
-  .category-box label {
-    display: flex;
-    gap: 0.25rem;
-    align-items: end;
-  }
-
-  .category-box input {
-    flex: 0;
-  }
-
-  .category-box span {
-    flex: 1;
+  .category-box button {
+    box-shadow: none;
+    width: 100%;
     white-space: nowrap;
+    font-size: 0.9rem;
   }
 
-  .category-box.overflowing-cb {
+  .category-box button.selected {
+    /* background-color: rgba(0, 0, 0, 0.1);
+    border-color: var(--accent); */
+    background-color: var(--accent);
+    color: var(--off-neutral);
+  }
+
+  .category-box.overflowing-cb,
+  .date-box.overflowing-db {
     right: 0;
   }
 
@@ -381,11 +440,18 @@
     font-size: 1.2rem;
   }
 
-  .category-box hr {
-    width: 100%;
-    border: none;
-    background-color: rgba(0, 0, 0, 0.2);
-    height: 1px;
+  /* TEMP */
+  .date-box {
+    white-space: nowrap;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  @media (max-width: 400px) {
+    .date-box {
+      /* right: 50%; */
+      left: -100%;
+    }
   }
   /* #endregion */
 </style>

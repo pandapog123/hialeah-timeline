@@ -29,10 +29,13 @@
     <h1>Community Hub</h1>
 
     <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;We are a community hub that aims to connect the people of Hialeah and Hialeah Gardens with trusted resources,
-       events, and opportunities to get involved. Our purpose is to provide information that is easily accessible 
-       and easily found, especially with regards to information about resources that can provide assistance with regards to food, 
-       events, opportunities to get involved, and opportunities to support your fellow community members.
+      &nbsp;&nbsp;&nbsp;&nbsp;We are a community hub that aims to connect the
+      people of Hialeah and Hialeah Gardens with trusted resources, events, and
+      opportunities to get involved. Our purpose is to provide information that
+      is easily accessible and easily found, especially with regards to
+      information about resources that can provide assistance with regards to
+      food, events, opportunities to get involved, and opportunities to support
+      your fellow community members.
     </p>
   </div>
 
@@ -48,9 +51,10 @@
         <h1>Fund your community!</h1>
 
         <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;Get involved in your community through the resources we've partnered with. 
-          Contributions and support go back directly into the local community, 
-          helping those in need through various community resources.
+          &nbsp;&nbsp;&nbsp;&nbsp;Get involved in your community through the
+          resources we've partnered with. Contributions and support go back
+          directly into the local community, helping those in need through
+          various community resources.
         </p>
       </div>
 
@@ -61,10 +65,11 @@
         <h1>Become a Volunteer!</h1>
 
         <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;Getting involved can be done by attending, as well as supporting, 
-          various activities that take place in the community. 
-          Volunteers are essential to ensuring that various activities, 
-          like food drives, take place, thereby fostering a sense of connection to the community.
+          &nbsp;&nbsp;&nbsp;&nbsp;Getting involved can be done by attending, as
+          well as supporting, various activities that take place in the
+          community. Volunteers are essential to ensuring that various
+          activities, like food drives, take place, thereby fostering a sense of
+          connection to the community.
         </p>
       </div>
 
@@ -75,8 +80,9 @@
         <h1>Make Your Voice Heard!</h1>
 
         <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;Have some feedback, concern, or local resource to share with us? 
-          Your input will help us improve this platform to better serve the needs of our community.
+          &nbsp;&nbsp;&nbsp;&nbsp;Have some feedback, concern, or local resource
+          to share with us? Your input will help us improve this platform to
+          better serve the needs of our community.
         </p>
       </div>
 
@@ -248,6 +254,10 @@
 
   .resources .content h1 {
     font-size: 2rem;
+  }
+
+  .resources .content p {
+    line-height: 1.2rem;
   }
 
   .resources img {
