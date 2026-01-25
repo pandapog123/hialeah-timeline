@@ -1,5 +1,7 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
+  import { v4 as uuidv4 } from "uuid";
+
   import { CommunityEvents, CommunityEventTags } from "$lib/store/events";
   import z, { xid } from "zod";
 
@@ -105,7 +107,7 @@
           return [
             ...p,
             {
-              id: crypto.randomUUID(),
+              id: uuidv4(),
               title: result.data["event-title"],
               date: [result.data.date],
               location: result.data.location,

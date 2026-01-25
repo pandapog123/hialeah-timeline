@@ -1,6 +1,6 @@
 <script lang="ts">
   import { browser } from "$app/environment";
-  import { CommunityEventTags } from "$lib/store/events";
+  import { CommunityEvents, CommunityEventTags } from "$lib/store/events";
   import { onDestroy, onMount, tick } from "svelte";
   import { crossfade, fade } from "svelte/transition";
   import DatePicker from "./DatePicker.svelte";
@@ -352,6 +352,15 @@
   {:else}
     <SearchEvents {dateFilter} {searchCategories} {searchInput} />
   {/if}
+
+  <button
+    class="clear-events"
+    onclick={() => {
+      $CommunityEvents = [];
+    }}
+  >
+    Clear Events
+  </button>
 </div>
 
 <style>
@@ -561,4 +570,22 @@
     }
   }
   /* #endregion */
+
+  .clear-events {
+    background-color: rgb(247, 65, 65);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--off-neutral);
+    transition: background-color 150ms ease-in-out;
+    flex-grow: 0;
+    align-self: end;
+    width: fit-content;
+  }
+
+  .clear-events:hover {
+    background-color: rgb(255, 80, 80);
+  }
 </style>
