@@ -22,7 +22,9 @@
 
 <div class="modal-wrapper" transition:fade={{ duration: 150 }}>
   <div class="modal" onclick={(e) => e.stopPropagation()}>
-    {@render children()}
+    <div class="content">
+      {@render children()}
+    </div>
   </div>
 </div>
 
@@ -45,26 +47,37 @@
   .modal {
     background-color: var(--off-neutral);
     overflow: hidden;
-    padding: 1rem;
     height: 100vh;
     width: 100vw;
-    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 
-    scrollbar-width: 0px;
+    /* scrollbar-width: 0px; */
+  }
+
+  .content {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 1rem;
     overflow-y: scroll;
+    height: 100%;
   }
 
   ::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
   }
 
   @media (min-width: 800px) {
-    .modal {
+    .content {
       padding: 2rem;
+    }
+
+    .modal {
+      max-height: 80vh;
       border-radius: 1rem;
       width: auto;
       height: auto;
-      max-height: 80vh;
     }
   }
 </style>
