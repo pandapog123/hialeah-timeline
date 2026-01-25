@@ -6,6 +6,7 @@
   import DatePicker from "./DatePicker.svelte";
   import UpcomingEvents from "./UpcomingEvents.svelte";
   import FeaturedEvents from "./FeaturedEvents.svelte";
+  import SearchEvents from "./SearchEvents.svelte";
 
   let searchInput = $state("");
 
@@ -53,7 +54,7 @@
 
   let isCategoryBoxOverflowing = $state(true);
 
-  $effect(() => {
+  $effect.pre(() => {
     if (!categoryBoxElement) {
       isCategoryBoxOverflowing = false;
 
@@ -61,6 +62,9 @@
     }
 
     windowWidth;
+    dateFilter;
+    searchCategories;
+    categoryBoxElement;
 
     isCategoryBoxOverflowing = isOverflowingX(categoryBoxElement);
 
@@ -78,7 +82,7 @@
 
   let isDateBoxOverflowing = $state(true);
 
-  $effect(() => {
+  $effect.pre(() => {
     if (!dateBoxElement) {
       isDateBoxOverflowing = false;
 
@@ -87,6 +91,7 @@
 
     windowWidth;
     dateFilter;
+    searchCategories;
     dateBoxElement;
 
     isDateBoxOverflowing = isOverflowingX(dateBoxElement);
@@ -327,7 +332,7 @@
 
     <FeaturedEvents />
   {:else}
-    <p in:fade={{ duration: 200 }}>Search Results</p>
+    <SearchEvents {dateFilter} {searchCategories} {searchInput} />
   {/if}
 </div>
 
