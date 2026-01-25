@@ -361,7 +361,15 @@
   .title {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 0.5rem;
+  }
+  .title h1 {
+    font-size: 2.5rem;
+  }
+
+  .title p {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
   }
 
   .request-event {
