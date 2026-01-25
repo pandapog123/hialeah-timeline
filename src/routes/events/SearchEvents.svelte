@@ -27,7 +27,7 @@
   }
 
   let searchedEvents = $derived.by<CommunityEvent[]>(() => {
-    return CommunityEvents.filter((p) => {
+    return $CommunityEvents.filter((p) => {
       if (props.searchInput.length > 0) {
         const input = props.searchInput.toLowerCase();
         const matchesTitle = p.title.toLowerCase().includes(input);

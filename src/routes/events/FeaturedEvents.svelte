@@ -15,7 +15,7 @@
   endDate.setHours(23, 59, 59, 999);
 
   let upcomingEvents = $derived.by<CommunityEvent[]>(() => {
-    return CommunityEvents.filter((p) => {
+    return $CommunityEvents.filter((p) => {
       const inDateRange = p.date.reduce(
         (p, c) => (c instanceof Date && c > startDate && c < endDate) || p,
         false,

@@ -26,7 +26,7 @@
 </svelte:head>
 
 <div class="layout">
-  <header inert={$showMenu}>
+  <header inert={$showMenu || page.state.selected}>
     <a href="/">
       <img src="/branding/Logo-light.png" alt="Gardens Connect Logo" />
       <h1>Gardens Connect</h1>
@@ -67,7 +67,7 @@
     {@render children()}
   </main>
 
-  <footer inert={$showMenu}>
+  <footer inert={$showMenu || page.state.selected}>
     <section class="footer-links">
       <ul>
         <h1>Resources</h1>

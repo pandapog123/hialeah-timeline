@@ -1,12 +1,16 @@
 <script lang="ts">
   import { browser } from "$app/environment";
-  import { CommunityEvents, CommunityEventTags } from "$lib/store/events";
+  import { CommunityEventTags } from "$lib/store/events";
   import { onDestroy, onMount, tick } from "svelte";
   import { crossfade, fade } from "svelte/transition";
   import DatePicker from "./DatePicker.svelte";
   import UpcomingEvents from "./UpcomingEvents.svelte";
   import FeaturedEvents from "./FeaturedEvents.svelte";
   import SearchEvents from "./SearchEvents.svelte";
+  import { goto, preloadData, pushState } from "$app/navigation";
+  import { page } from "$app/state";
+  import Modal from "./Modal.svelte";
+  import CreateEventPage from "./create/+page.svelte";
 
   let searchInput = $state("");
 
@@ -131,16 +135,13 @@
   });
 </script>
 
-<!-- 
-<div>
-  <div>EXPERIMENTAL:</div>
+{#if page.state.selected}
+  <Modal onDismiss={() => history.back()}>
+    <CreateEventPage modal />
+  </Modal>
+{/if}
 
-  <div>Search: {searchInput}</div>
-  <div>Category Filter: {searchCategories}</div>
-  <div>Date Filter: {dateFilter}</div>
-</div> -->
-
-<div class="events">
+<div class="events" inert={page.state.selected}>
   <section class="header">
     <div class="title">
       <h1>Community Events</h1>
@@ -150,8 +151,25 @@
       </p>
     </div>
 
-    <button onclick={handleNewEvent} class="request-event"
-      >Request a New Event</button
+    <a
+      href="/events/create"
+      onclick={async (e) => {
+        if (innerWidth < 800 || e.shiftKey || e.metaKey || e.ctrlKey) return;
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        const { href } = e.currentTarget;
+
+        const result = await preloadData(href);
+
+        if (result.type === "loaded" && result.status === 200) {
+          pushState(href, { selected: result.data });
+        } else {
+          goto(href);
+        }
+      }}
+      class="request-event">Request a New Event</a
     >
   </section>
 
@@ -359,7 +377,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: end;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     gap: 2rem;
   }
 
@@ -386,7 +404,11 @@
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     white-space: nowrap;
+    /* display: block; */
+    width: 100%;
     flex: 1;
+    text-align: center;
+    text-decoration: none;
 
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     transition: opacity 150ms ease-in-out;
@@ -396,7 +418,7 @@
     opacity: 0.8;
   }
 
-  @media (min-width: 863px) {
+  @media (min-width: 971px) {
     .request-event {
       flex: 0;
     }

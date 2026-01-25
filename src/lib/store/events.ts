@@ -8,6 +8,8 @@
 //   | "Planning & Zoning"
 // | "Utilities & Public Works";
 
+import { writable, type Writable } from "svelte/store";
+
 export const CommunityEventTags = [
   "Arts & Culture",
   "Youth & Family",
@@ -31,7 +33,7 @@ export type CommunityEvent = {
   content: string[];
 };
 
-export const CommunityEvents: CommunityEvent[] = [
+export let CommunityEvents: Writable<CommunityEvent[]> = writable([
   {
     id: "18c03a1a-9dd4-4b22-b6f9-4c7b1148c95c",
     title: "City Council Meeting",
@@ -87,4 +89,4 @@ export const CommunityEvents: CommunityEvent[] = [
       "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.",
     ],
   },
-];
+]);

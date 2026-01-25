@@ -3,7 +3,7 @@
   import { CommunityEvents } from "$lib/store/events";
 
   // error was handled on the load function; thus it is safe to !
-  const event = CommunityEvents.find((c) => c.id === page.params.event!)!;
+  const event = $CommunityEvents.find((c) => c.id === page.params.event!)!;
 
   function formatEventDates(items: (Date | string)[]) {
     const dates = items.filter((i) => i instanceof Date) as Date[];
