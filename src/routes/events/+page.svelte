@@ -2,8 +2,10 @@
   import { browser } from "$app/environment";
   import { CommunityEvents, CommunityEventTags } from "$lib/store/events";
   import { onDestroy, onMount, tick } from "svelte";
-  import { fade } from "svelte/transition";
+  import { crossfade, fade } from "svelte/transition";
   import DatePicker from "./DatePicker.svelte";
+  import UpcomingEvents from "./UpcomingEvents.svelte";
+  import FeaturedEvents from "./FeaturedEvents.svelte";
 
   let searchInput = $state("");
 
@@ -27,8 +29,6 @@
 
   function isOverflowingX(el: HTMLElement) {
     const rect = el.getBoundingClientRect();
-
-    console.log();
 
     return rect.left < 0 || rect.right > window.innerWidth;
   }
@@ -63,6 +63,17 @@
     windowWidth;
 
     isCategoryBoxOverflowing = isOverflowingX(categoryBoxElement);
+
+    tick().then(() => {
+      if (!categoryBoxElement) {
+        isCategoryBoxOverflowing = false;
+
+        return;
+      }
+
+      isCategoryBoxOverflowing =
+        isCategoryBoxOverflowing || isOverflowingX(categoryBoxElement);
+    });
   });
 
   let isDateBoxOverflowing = $state(true);
@@ -75,13 +86,32 @@
     }
 
     windowWidth;
+    dateFilter;
+    dateBoxElement;
 
     isDateBoxOverflowing = isOverflowingX(dateBoxElement);
+
+    tick().then(() => {
+      if (!dateBoxElement) {
+        isDateBoxOverflowing = false;
+
+        return;
+      }
+
+      isDateBoxOverflowing =
+        isDateBoxOverflowing || isOverflowingX(dateBoxElement);
+    });
   });
 
   function dismissInputs() {
     showCategoriesSelect = false;
     showDateFilter = false;
+  }
+
+  function handleClearFilters() {
+    searchInput = "";
+    searchCategories = [];
+    dateFilter = [];
   }
 
   onMount(() => {
@@ -96,13 +126,14 @@
   });
 </script>
 
+<!-- 
 <div>
   <div>EXPERIMENTAL:</div>
 
   <div>Search: {searchInput}</div>
   <div>Category Filter: {searchCategories}</div>
   <div>Date Filter: {dateFilter}</div>
-</div>
+</div> -->
 
 <div class="events">
   <section class="header">
@@ -227,12 +258,20 @@
                     day: "2-digit",
                   })}
             {:else}
-              {dateFilter[0].toLocaleDateString("en-US", {
+              {@const dateOrderNormal = dateFilter[0] < dateFilter[1]}
+
+              {(dateOrderNormal
+                ? dateFilter[0]
+                : dateFilter[1]
+              ).toLocaleDateString("en-US", {
                 // weekday: "short",
                 // year: "numeric",
                 // month: "short",
                 // day: "2-digit",
-              })} - {dateFilter[1].toLocaleDateString("en-US", {
+              })} - {(dateOrderNormal
+                ? dateFilter[1]
+                : dateFilter[0]
+              ).toLocaleDateString("en-US", {
                 // weekday: "short",
                 // year: "numeric",
                 // month: "short",
@@ -274,8 +313,22 @@
           </div>
         {/if}
       </div>
+
+      {#if searchInput.length > 0 || searchCategories.length > 0 || dateFilter.length > 0}
+        <button class="clear-filters" onclick={handleClearFilters}
+          >Clear Filters</button
+        >
+      {/if}
     </div>
   </section>
+
+  {#if searchInput === "" && searchCategories.length === 0 && dateFilter.length === 0}
+    <UpcomingEvents />
+
+    <FeaturedEvents />
+  {:else}
+    <p in:fade={{ duration: 200 }}>Search Results</p>
+  {/if}
 </div>
 
 <style>
@@ -288,7 +341,6 @@
     flex-direction: column;
     gap: 2rem;
     padding: 1rem;
-    padding-bottom: 100px;
   }
 
   @media (min-width: 900px) {
@@ -310,7 +362,6 @@
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
-    flex: content;
   }
 
   .request-event {
@@ -358,6 +409,7 @@
     padding: 0;
     flex: 1;
     outline: none;
+    min-width: min(20rem, 60vw);
   }
 
   .search-label {
@@ -424,6 +476,8 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+
+    z-index: 10;
   }
 
   .category-box {
@@ -459,6 +513,10 @@
   .category-box h2 {
     font-weight: 600;
     font-size: 1.2rem;
+  }
+
+  button.clear-filters {
+    /* background: rgb(255, 202, 202); */
   }
 
   @media (max-width: 400px) {

@@ -217,6 +217,10 @@
             date.getFullYear() === day.date.getFullYear())
         );
       }, false)}
+      {@const dayToday =
+        new Date().getDate() === day.date.getDate() &&
+        new Date().getMonth() === day.date.getMonth() &&
+        new Date().getFullYear() === day.date.getFullYear()}
 
       {@const dayOrderNormal = props.currentDates[0] < props.currentDates[1]}
 
@@ -225,6 +229,7 @@
         class:not-in-month={day.monthStatus === "next" ||
           day.monthStatus === "prev"}
         class:selected={dayInProps}
+        class:today={dayToday}
         class:selected-first={props.currentDates.length > 1 &&
           dayInProps &&
           (dayOrderNormal
@@ -345,6 +350,10 @@
 
   .days-grid button.not-in-month {
     color: rgba(0, 0, 0, 0.4);
+  }
+
+  .days-grid button.today {
+    background-color: rgba(0, 0, 0, 0.075);
   }
 
   .days-grid button:hover {
