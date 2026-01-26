@@ -1,6 +1,10 @@
 <script lang="ts">
   import { browser } from "$app/environment";
-  import { CommunityEvents, CommunityEventTags } from "$lib/store/events";
+  import {
+    CommunityEvents,
+    CommunityEventTags,
+    OGEvents,
+  } from "$lib/store/events";
   import { onDestroy, onMount, tick } from "svelte";
   import { crossfade, fade } from "svelte/transition";
   import DatePicker from "./DatePicker.svelte";
@@ -356,7 +360,7 @@
   <button
     class="clear-events"
     onclick={() => {
-      $CommunityEvents = [];
+      $CommunityEvents = OGEvents;
     }}
   >
     Clear Events

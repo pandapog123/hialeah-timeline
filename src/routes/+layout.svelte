@@ -104,7 +104,12 @@
     height: 100%;
   }
 
+  :global(html) {
+    overflow: hidden;
+  }
+
   :global(body) {
+    scrollbar-gutter: stable;
     --neutral: #000;
     --off-neutral: #fff;
     --primary: #598356;

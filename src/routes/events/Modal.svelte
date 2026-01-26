@@ -33,27 +33,31 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.6);
+
+    backdrop-filter: blur(4px) saturate(100%);
+    -webkit-backdrop-filter: blur(4px) saturate(100%);
+
+    background-color: rgba(0, 0, 0, 0.2);
 
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 50;
+
+    inset: 0;
   }
 
   .modal {
     background-color: var(--off-neutral);
     overflow: hidden;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     padding: 0;
     display: flex;
     flex-direction: column;
-
-    /* scrollbar-width: 0px; */
   }
 
   .content {
@@ -62,6 +66,7 @@
     padding: 1rem;
     overflow-y: scroll;
     height: 100%;
+    scrollbar-gutter: stable;
   }
 
   ::-webkit-scrollbar {
