@@ -115,7 +115,9 @@
   /* #region hero */
   .hero {
     position: relative;
+    max-width: 100vw;
     padding: 7rem 1rem;
+    box-sizing: border-box;
   }
 
   .hero img {

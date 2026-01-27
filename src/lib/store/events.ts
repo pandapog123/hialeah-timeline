@@ -38,7 +38,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "18c03a1a-9dd4-4b22-b6f9-4c7b1148c95c",
     title: "City Council Meeting",
-    date: [new Date(2026, 0, 25, 7, 30), new Date(2026, 0, 25, 8, 30)],
+    date: [new Date(2026, 0, 27, 7, 30), new Date(2026, 0, 27, 8, 30)],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government"],
@@ -54,7 +54,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "8e53cd95-45b1-427c-a87a-2cfe7ae995e3",
     title: "City Council Meeting",
-    date: [new Date(2026, 0, 26, 7, 30)],
+    date: [new Date(2026, 0, 28, 7, 30)],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government"],

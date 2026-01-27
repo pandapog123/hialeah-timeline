@@ -124,6 +124,10 @@
     overflow-x: hidden;
   }
 
+  :global(*) {
+    outline-color: var(--primary);
+  }
+
   * {
     margin: 0;
   }
@@ -140,6 +144,8 @@
 
   main {
     flex: 1;
+    min-height: 100%;
+    /* display: grid; */
   }
 
   header {

@@ -14,3 +14,5 @@ export const load = ({ params }) => {
     title: get(CommunityEvents).find((p) => p.id === params.event)!.title,
   };
 };
+
+export const prerender = true;

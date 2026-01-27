@@ -357,14 +357,16 @@
     <SearchEvents {dateFilter} {searchCategories} {searchInput} />
   {/if}
 
-  <button
-    class="clear-events"
-    onclick={() => {
-      $CommunityEvents = OGEvents;
-    }}
-  >
-    Clear Events
-  </button>
+  {#if $CommunityEvents.length !== OGEvents.length}
+    <button
+      class="clear-events"
+      onclick={() => {
+        $CommunityEvents = OGEvents;
+      }}
+    >
+      Clear Custom Events
+    </button>
+  {/if}
 </div>
 
 <style>

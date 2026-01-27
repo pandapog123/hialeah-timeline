@@ -230,6 +230,8 @@
           </div>
         </li>
       </a>
+    {:else}
+      <p>No events found.</p>
     {/each}
   </ul>
 </section>
