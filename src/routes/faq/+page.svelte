@@ -82,6 +82,7 @@
     display: flex;
     gap: 0.5rem;
     align-items: center;
+
     flex: 1;
   }
 
@@ -93,8 +94,8 @@
   }
 
   svg {
-    width: 1rem;
-    height: 1rem;
+    width: 1.25rem;
+    height: 1.25rem;
 
     transition: transform 200ms ease-in-out;
   }
@@ -106,6 +107,8 @@
 
   .accordion-title {
     text-align: left;
+    width: fit-content;
+    font-size: 1.2rem;
   }
 
   li.selected svg {
@@ -120,7 +123,8 @@
   .accordion-content {
     display: grid;
     grid-template-rows: 1fr;
-
+    font-size: 1.1rem;
+    line-height: 1.5rem;
     transition: all 250ms ease-in-out;
   }
 
@@ -139,7 +143,7 @@
 
   @media (min-width: 650px) {
     .accordion-title {
-      font-size: 1.25rem;
+      /* font-size: 1.4rem; */
     }
   }
 </style>

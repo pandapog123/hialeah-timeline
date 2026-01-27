@@ -208,20 +208,40 @@
   <h1>Search Results</h1>
 
   <ul>
+    {#snippet highlight(text: string)}
+      {#if !props.searchInput.trim()}
+        {text}
+      {:else}
+        {@const escaped = props.searchInput.replace(
+          /[.*+?^${}()|[\]\\]/g,
+          "\\$&",
+        )}
+        {@const regex = new RegExp(`(${escaped})`, "gi")}
+
+        {#each text.split(regex) as part}
+          {#if part.match(regex)}
+            <span class="highlight">{part}</span>
+          {:else}
+            {part}
+          {/if}
+        {/each}
+      {/if}
+    {/snippet}
+
     {#each searchedEvents as event}
       <a href="/events/{event.id}">
         <li>
           <h2>
-            {event.title}
+            {@render highlight(event.title)}
           </h2>
 
           <p>
             {formatEventDates(event.date)}
           </p>
 
-          <p>{event.location}</p>
+          <p>{@render highlight(event.location)}</p>
 
-          <p>{event.description}</p>
+          <p>{@render highlight(event.description)}</p>
 
           <div class="tags">
             {#each event.tags as tag}
@@ -331,6 +351,10 @@
 
   .tag.tag7 {
     background-color: #0d9488;
+  }
+
+  .highlight {
+    background-color: rgb(255, 255, 154);
   }
 
   @media (min-width: 750px) {
