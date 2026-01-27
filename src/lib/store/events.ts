@@ -8,7 +8,7 @@
 //   | "Planning & Zoning"
 // | "Utilities & Public Works";
 
-import { browser } from "$app/environment";
+import { browser, dev } from "$app/environment";
 import { get, writable, type Writable } from "svelte/store";
 
 export const CommunityEventTags = [
@@ -37,7 +37,7 @@ export type CommunityEvent = {
 export const OGEvents: CommunityEvent[] = [
   {
     id: "18c03a1a-9dd4-4b22-b6f9-4c7b1148c95c",
-    title: "City Council Meeting",
+    title: "City Council Meeting test",
     date: [new Date(2026, 0, 27, 7, 30), new Date(2026, 0, 27, 8, 30)],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
@@ -58,6 +58,8 @@ export const OGEvents: CommunityEvent[] = [
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government"],
+    imageURL:
+      "https://imgs.search.brave.com/ef32VEJDd1gq0wS4U8D5UYAnBoXuyeTIoerIYz0Ibc8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXNjZG4uaG9tZXMu/Y29tL2kyLzFBUjl2/LWpKeFZmdWpob1M5/YUZoWnVxbXRNZDMz/ZzhSVVF5ZnJJakth/YncvMTEwL2hpYWxl/YWgtZ2FyZGVucy1m/bC03LmpwZz9wPTE",
 
     content: [
       "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.",
@@ -96,6 +98,10 @@ export let CommunityEvents: Writable<CommunityEvent[]> = writable(
   OGEvents,
   (set, update) => {
     if (browser) {
+      if (dev) {
+        localStorage.removeItem("COMMUNITY_EVENTS"); // Remove in prod
+      }
+
       let localCommunityEvents = localStorage.getItem("COMMUNITY_EVENTS");
 
       if (localCommunityEvents) {
