@@ -107,15 +107,24 @@ export let CommunityEvents: Writable<CommunityEvent[]> = writable(
       if (localCommunityEvents) {
         let parsedCommunityEvents = JSON.parse(localCommunityEvents);
 
-        for (let i = 0; i < parsedCommunityEvents.length; i++) {
-          parsedCommunityEvents[i].date.forEach((s, j) => {
-            if (isValidDate(s)) {
-              parsedCommunityEvents[i].date[j] = new Date(s);
-            }
-          });
-        }
+        try {
+          for (let i = 0; i < parsedCommunityEvents.length; i++) {
+            parsedCommunityEvents[i].date.forEach((s, j) => {
+              if (isValidDate(s)) {
+                parsedCommunityEvents[i].date[j] = new Date(s);
+              }
+            });
+          }
 
-        set(parsedCommunityEvents);
+          set(parsedCommunityEvents);
+        } catch (e) {
+          localStorage.removeItem("COMMUNITY_EVENTS");
+
+          localStorage.setItem(
+            "COMMUNITY_EVENTS",
+            JSON.stringify(get(CommunityEvents)),
+          );
+        }
       } else {
         localStorage.setItem(
           "COMMUNITY_EVENTS",
