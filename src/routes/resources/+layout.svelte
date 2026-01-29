@@ -167,7 +167,7 @@
   }
 
   article {
-    height: 30rem;
+    min-height: 40rem;
     flex: 1;
     display: block;
   }
