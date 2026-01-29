@@ -32,7 +32,15 @@ export const OGResources: CommunityResourceList = {
     {
       id: "test",
       title: "Human Resources Department",
-      contacts: [],
+      contacts: [
+        {
+          email: "example@email.com",
+          name: "John Doe",
+          phoneNumber: "(012) 345-6789",
+          position: "Lorem",
+        },
+      ],
+      imageURL: "/community/Community Activity.jpg",
       content: [
         `# Markdown syntax guide
 
