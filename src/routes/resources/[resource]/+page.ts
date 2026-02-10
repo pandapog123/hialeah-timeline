@@ -1,4 +1,6 @@
+import { browser, dev } from "$app/environment";
 import {
+  CommunityResources,
   findResourceByID,
   OGResources,
   resourceInStore,
@@ -7,12 +9,15 @@ import {
 import { error } from "@sveltejs/kit";
 
 export const load = ({ params }) => {
-  let resource: CommunityResource | undefined;
+  if (!browser) {
+    return {
+      title: "Loading Resource",
+    };
+  }
 
-  for (const key in OGResources) {
-    if (resourceInStore(params.resource)) {
-      resource = findResourceByID(params.resource);
-    }
+  let resource: CommunityResource | undefined;
+  if (resourceInStore(params.resource)) {
+    resource = findResourceByID(params.resource);
   }
 
   if (!params.resource || !resource) {
@@ -20,7 +25,7 @@ export const load = ({ params }) => {
   }
 
   return {
-    title: resource.title,
+    title: "tst",
   };
 };
 

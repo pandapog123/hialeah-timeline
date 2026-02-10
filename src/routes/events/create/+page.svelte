@@ -3,7 +3,7 @@
   import { v4 as uuidv4 } from "uuid";
 
   import { CommunityEvents, CommunityEventTags } from "$lib/store/events";
-  import z, { xid } from "zod";
+  import z from "zod";
 
   let { modal }: { modal?: boolean } = $props();
 

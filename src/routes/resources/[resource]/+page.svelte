@@ -1,59 +1,63 @@
 <script lang="ts">
   import { marked } from "marked";
   import { page } from "$app/state";
-  import { findResourceByID } from "$lib/store/resources";
+  import { CommunityResources, findResourceByID } from "$lib/store/resources";
 
   let resource = $derived.by(() => {
     return findResourceByID(page.params.resource!)!;
   });
 </script>
 
-<section class="resource">
-  <div class="title">
-    <div class="resource-branch">
-      <a href="/resources">Resources</a>
-      {">"}
-      <!-- {findResourceCategory(resource.id)}
+{#if resource}
+  <section class="resource">
+    <div class="title">
+      <div class="resource-branch">
+        <a href="/resources">Resources</a>
+        {">"}
+        <!-- {findResourceCategory(resource.id)}
       {">"} -->
-      {resource.title}
-    </div>
-
-    <h1>{resource.title}</h1>
-  </div>
-
-  <div class="content">
-    {#if resource.contacts.length > 0 || resource.imageURL}
-      <div class="aux-elements">
-        {#if resource.imageURL}
-          <img src={resource.imageURL} alt={resource.title} />
-        {/if}
-
-        {#if resource.contacts.length > 0}
-          <div class="contacts">
-            <h2>Contact</h2>
-
-            <hr />
-
-            {#each resource.contacts as contact}
-              <div class="contact">
-                <h3>{contact.name}</h3>
-                <p>{contact.position}</p>
-                <p>{contact.phoneNumber}</p>
-                <p>{contact.email}</p>
-              </div>
-            {/each}
-          </div>
-        {/if}
+        {resource.title}
       </div>
-    {/if}
 
-    <div class="article">
-      {#each resource.content as contentBlock}
-        {@html marked(contentBlock)}
-      {/each}
+      <h1>{resource.title}</h1>
     </div>
-  </div>
-</section>
+
+    <div class="content">
+      {#if resource.contacts.length > 0 || resource.imageURL}
+        <div class="aux-elements">
+          {#if resource.imageURL}
+            <img src={resource.imageURL} alt={resource.title} />
+          {/if}
+
+          {#if resource.contacts.length > 0}
+            <div class="contacts">
+              <h2>Contact</h2>
+
+              <hr />
+
+              {#each resource.contacts as contact}
+                <div class="contact">
+                  <h3>{contact.name}</h3>
+                  <p>{contact.position}</p>
+                  <p>{contact.phoneNumber}</p>
+                  <p>{contact.email}</p>
+                </div>
+              {/each}
+            </div>
+          {/if}
+        </div>
+      {/if}
+
+      <div class="article">
+        {#each resource.content as contentBlock}
+          {@html marked(contentBlock)}
+        {/each}
+      </div>
+    </div>
+  </section>
+{:else}
+  <h1>Loading Resource</h1>
+{/if}
 
 <style>
   * {
@@ -100,6 +104,7 @@
 
   .contacts {
     width: 100%;
+    overflow: hidden;
     border: solid 1px rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
   }

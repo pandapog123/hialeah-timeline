@@ -1,3 +1,6 @@
+import { browser, dev } from "$app/environment";
+import { get, writable, type Writable } from "svelte/store";
+
 export type CommunityResource = {
   id: string;
   title: string;
@@ -244,14 +247,83 @@ Happy hacking 🚀
   "Information and Advocacy": [],
 };
 
+export let CommunityResources: Writable<CommunityResourceList> = writable(
+  OGResources,
+  (set, update) => {
+    if (browser) {
+      // if (dev) {
+      //   localStorage.removeItem("COMMUNITY_RESOURCES"); // Remove in prod
+      // }
+
+      let localCommunityResources = localStorage.getItem("COMMUNITY_RESOURCES");
+
+      if (localCommunityResources) {
+        let parsedCommunityResources = JSON.parse(localCommunityResources);
+
+        try {
+          // Logic for validation
+
+          // for (let i = 0; i < parsedCommunityResources.length; i++) {
+          //   parsedCommunityResources[i].date.forEach((s, j) => {
+          //     if (isValidDate(s)) {
+          //       parsedCommunityResources[i].date[j] = new Date(s);
+          //     }
+          //   });
+          // }
+
+          set(parsedCommunityResources);
+        } catch (e) {
+          localStorage.removeItem("COMMUNITY_RESOURCES");
+
+          localStorage.setItem(
+            "COMMUNITY_RESOURCES",
+            JSON.stringify(get(CommunityResources)),
+          );
+        }
+      } else {
+        localStorage.setItem(
+          "COMMUNITY_RESOURCES",
+          JSON.stringify(get(CommunityResources)),
+        );
+      }
+    }
+  },
+);
+
+CommunityResources.subscribe((ce) => {
+  if (browser) {
+    localStorage.setItem("COMMUNITY_RESOURCES", JSON.stringify(ce));
+
+    for (let i = 0; i < typedResourceKey(ce).length; i++) {
+      if (
+        ce[typedResourceKey(ce)[i]].length <
+        OGResources[typedResourceKey(ce)[i]].length
+      ) {
+        localStorage.removeItem("COMMUNITY_RESOURCES");
+        break;
+      }
+    }
+  }
+});
+
+export function resourcesDiff(resources: CommunityResourceList) {
+  for (const c of typedResourceKey(resources)) {
+    if (resources[c].length !== OGResources[c].length) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
 export function typedResourceKey(resources: CommunityResourceList) {
   return Object.keys(resources) as (keyof CommunityResourceList)[];
 }
 
 export function findResourceByID(id: string) {
-  for (const key in OGResources) {
+  for (const key in get(CommunityResources)) {
     let k = key as (typeof CommunityResourceCategories)[number];
-    let r = OGResources[k].find((v) => v.id === id);
+    let r = get(CommunityResources)[k].find((v) => v.id === id);
     if (r) {
       return r;
     }
@@ -261,9 +333,9 @@ export function findResourceByID(id: string) {
 }
 
 export function resourceInStoreWithKey(key: string, id: string) {
-  for (const k of typedResourceKey(OGResources)) {
+  for (const k of typedResourceKey(get(CommunityResources))) {
     if (k === key) {
-      let r = OGResources[k].reduce((p, cv) => {
+      let r = get(CommunityResources)[k].reduce((p, cv) => {
         return p || cv.id === id;
       }, false);
       if (r) {
@@ -276,9 +348,9 @@ export function resourceInStoreWithKey(key: string, id: string) {
 }
 
 export function findResourceCategory(id: string) {
-  for (const key in OGResources) {
+  for (const key in get(CommunityResources)) {
     let k = key as (typeof CommunityResourceCategories)[number];
-    let r = OGResources[k].reduce((p, cv) => {
+    let r = get(CommunityResources)[k].reduce((p, cv) => {
       return p || cv.id === id;
     }, false);
     if (r) {
@@ -290,9 +362,9 @@ export function findResourceCategory(id: string) {
 }
 
 export function resourceInStore(id: string) {
-  for (const key in OGResources) {
+  for (const key in get(CommunityResources)) {
     let k = key as (typeof CommunityResourceCategories)[number];
-    let r = OGResources[k].reduce((p, cv) => {
+    let r = get(CommunityResources)[k].reduce((p, cv) => {
       return p || cv.id === id;
     }, false);
     if (r) {

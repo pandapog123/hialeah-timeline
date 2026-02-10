@@ -1,11 +1,16 @@
 <script lang="ts">
+  import { goto, preloadData, pushState } from "$app/navigation";
   import { page } from "$app/state";
   import {
     CommunityResourceCategories,
+    CommunityResources,
     OGResources,
     resourceInStoreWithKey,
+    resourcesDiff,
     typedResourceKey,
   } from "$lib/store/resources";
+  import Modal from "./Modal.svelte";
+  import CreateResourcePage from "./create/+page.svelte";
 
   let { children } = $props();
 
@@ -27,7 +32,7 @@
         "Information and Advocacy": false,
       };
 
-      for (const key of typedResourceKey(OGResources)) {
+      for (const key of typedResourceKey($CommunityResources)) {
         if (
           page.params.resource &&
           resourceInStoreWithKey(key, page.params.resource)
@@ -41,7 +46,7 @@
   );
 
   $effect(() => {
-    for (const key of typedResourceKey(OGResources)) {
+    for (const key of typedResourceKey($CommunityResources)) {
       if (
         page.params.resource &&
         resourceInStoreWithKey(key, page.params.resource)
@@ -54,9 +59,16 @@
   });
 </script>
 
+{#if page.state.selected}
+  <Modal onDismiss={() => history.back()}>
+    <CreateResourcePage modal />
+  </Modal>
+{/if}
+
 <section
   class:show-content={page.route.id !== "/resources"}
   class:show-nav={page.route.id === "/resources"}
+  inert={page.state.selected}
 >
   <aside>
     <div class="nav-header">
@@ -79,13 +91,32 @@
         <span>Search for Resources</span>
       </button>
 
-      <a href="/resources/create">Request a New Resource</a>
+      <a
+        href="/resources/create"
+        onclick={async (e) => {
+          if (!(innerWidth > 800) || e.shiftKey || e.metaKey || e.ctrlKey)
+            return;
+
+          e.preventDefault();
+          e.stopPropagation();
+
+          const { href } = e.currentTarget;
+
+          const result = await preloadData(href);
+
+          if (result.type === "loaded" && result.status === 200) {
+            pushState(href, { selected: result.data });
+          } else {
+            goto(href);
+          }
+        }}>Request a New Resource</a
+      >
     </div>
 
     <hr />
 
     <ul class="resource-list">
-      {#each typedResourceKey(OGResources) as resourceCategory, i}
+      {#each typedResourceKey($CommunityResources) as resourceCategory, i}
         <li class:open={resourceList[resourceCategory]}>
           <button
             onclick={() => {
@@ -120,7 +151,7 @@
             <div class="resources-content-inner">
               <div class="resources-content-padding">
                 <ul>
-                  {#each OGResources[resourceCategory as (typeof CommunityResourceCategories)[number]] as resource}
+                  {#each $CommunityResources[resourceCategory as (typeof CommunityResourceCategories)[number]] as resource}
                     <a href="/resources/{resource.id}">
                       <li class:selected={page.params.resource === resource.id}>
                         {resource.title}
@@ -133,11 +164,20 @@
           </div>
         </li>
 
-        {#if i !== Object.keys(OGResources).length - 1}
+        {#if i !== Object.keys($CommunityResources).length - 1 || resourcesDiff($CommunityResources)}
           <hr />
         {/if}
       {/each}
     </ul>
+
+    {#if resourcesDiff($CommunityResources)}
+      <button
+        class="clear"
+        onclick={() => {
+          $CommunityResources = OGResources;
+        }}>Clear New Events</button
+      >
+    {/if}
   </aside>
 
   <article>
@@ -319,6 +359,19 @@
 
   .resources-content a li.selected {
     background-color: #c1e8c340;
+  }
+
+  button.clear {
+    border: none;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    background-color: rgba(218, 124, 124, 0.25);
+    transition: all 150ms ease-in-out;
+  }
+
+  button.clear:hover {
+    background-color: rgba(218, 124, 124, 0.35);
   }
 
   @media (min-width: 801px) {
