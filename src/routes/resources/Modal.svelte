@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onDestroy, onMount, tick } from "svelte";
-  import { fade } from "svelte/transition";
+  import { fade, scale } from "svelte/transition";
 
   let {
     children,
@@ -25,7 +25,11 @@
 </script>
 
 <div class="modal-wrapper" transition:fade={{ duration: 150 }}>
-  <div class="modal" onclick={(e) => e.stopPropagation()}>
+  <div
+    class="modal"
+    onclick={(e) => e.stopPropagation()}
+    transition:scale={{ start: 0.9, duration: 200 }}
+  >
     <div class="content" class:nopad>
       {@render children()}
     </div>
