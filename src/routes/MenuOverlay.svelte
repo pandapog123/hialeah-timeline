@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { Writable } from "svelte/store";
+  import { scale } from "svelte/transition";
 
   interface MenuOverlayProps {
     showMenu: Writable<boolean>;
@@ -8,87 +9,90 @@
   let { showMenu }: MenuOverlayProps = $props();
 </script>
 
-<div
-  class="menu-overlay"
-  class:shown={$showMenu}
-  aria-hidden={$showMenu}
-  inert={!$showMenu}
->
-  <div class="links">
-    <a
-      href="/"
-      on:click={() => {
-        $showMenu = false;
-      }}
-    >
-      Home
-    </a>
-
-    <a
-      href="/resources"
-      on:click={() => {
-        $showMenu = false;
-      }}
-    >
-      Resources
-    </a>
-    <a
-      href="/events"
-      on:click={() => {
-        $showMenu = false;
-      }}
-    >
-      Events
-    </a>
-    <a
-      href="/faq"
-      on:click={() => {
-        $showMenu = false;
-      }}
-    >
-      FAQ
-    </a>
-    <a
-      href="/contact"
-      on:click={() => {
-        $showMenu = false;
-      }}
-    >
-      Contact
-    </a>
-    <a
-      href="/references"
-      on:click={() => {
-        $showMenu = false;
-      }}
-    >
-      Reference Page
-    </a>
-  </div>
-
-  <button
-    aria-label="Close Navigation"
-    on:click={() => {
-      $showMenu = false;
-    }}
-    class="close-menu"
+{#if $showMenu}
+  <div
+    class="menu-overlay"
+    class:shown={$showMenu}
+    aria-hidden={$showMenu}
+    inert={!$showMenu}
+    transition:scale={{ start: 0.95, duration: 200 }}
   >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="currentColor"
-      class="size-6"
+    <div class="links">
+      <a
+        href="/"
+        on:click={() => {
+          $showMenu = false;
+        }}
+      >
+        Home
+      </a>
+
+      <a
+        href="/resources"
+        on:click={() => {
+          $showMenu = false;
+        }}
+      >
+        Resources
+      </a>
+      <a
+        href="/events"
+        on:click={() => {
+          $showMenu = false;
+        }}
+      >
+        Events
+      </a>
+      <a
+        href="/faq"
+        on:click={() => {
+          $showMenu = false;
+        }}
+      >
+        FAQ
+      </a>
+      <a
+        href="/contact"
+        on:click={() => {
+          $showMenu = false;
+        }}
+      >
+        Contact
+      </a>
+      <a
+        href="/references"
+        on:click={() => {
+          $showMenu = false;
+        }}
+      >
+        Reference Page
+      </a>
+    </div>
+
+    <button
+      aria-label="Close Navigation"
+      on:click={() => {
+        $showMenu = false;
+      }}
+      class="close-menu"
     >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M6 18 18 6M6 6l12 12"
-      />
-    </svg>
-  </button>
-</div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18 18 6M6 6l12 12"
+        />
+      </svg>
+    </button>
+  </div>
+{/if}
 
 <style>
   .menu-overlay {
@@ -121,13 +125,13 @@
   .links {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 
   .links a {
     text-decoration: none;
     color: var(--neutral);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
   }
 
