@@ -2,7 +2,11 @@
   import { onDestroy, onMount, tick } from "svelte";
   import { fade } from "svelte/transition";
 
-  let { children, onDismiss }: { onDismiss: () => void } = $props();
+  let {
+    children,
+    onDismiss,
+    nopad,
+  }: { onDismiss: () => void; nopad?: boolean } = $props();
 
   onMount(async () => {
     window.document.body.style.overflowY = "hidden";
@@ -22,7 +26,7 @@
 
 <div class="modal-wrapper" transition:fade={{ duration: 150 }}>
   <div class="modal" onclick={(e) => e.stopPropagation()}>
-    <div class="content">
+    <div class="content" class:nopad>
       {@render children()}
     </div>
   </div>
@@ -69,13 +73,19 @@
     scrollbar-gutter: stable;
   }
 
-  ::-webkit-scrollbar {
-    /* display: none; */
+  .content.nopad {
+    padding: 0;
+    scrollbar-gutter: auto;
+    overflow: hidden;
   }
 
   @media (min-width: 800px) {
     .content {
       padding: 2rem;
+    }
+
+    .content.nopad {
+      padding: 0;
     }
 
     .modal {

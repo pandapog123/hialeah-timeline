@@ -564,4 +564,8 @@
     border: none;
     border-top: solid rgba(0, 0, 0, 0.1) 1px;
   }
+
+  .contact-error {
+    color: rgb(234, 67, 67);
+  }
 </style>

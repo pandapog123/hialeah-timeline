@@ -10,6 +10,7 @@
     typedResourceKey,
   } from "$lib/store/resources";
   import Modal from "./Modal.svelte";
+  import Search from "./Search.svelte";
   import CreateResourcePage from "./create/+page.svelte";
 
   let { children } = $props();
@@ -45,6 +46,8 @@
     })(),
   );
 
+  let showSearch = $state(false);
+
   $effect(() => {
     for (const key of typedResourceKey($CommunityResources)) {
       if (
@@ -65,16 +68,28 @@
   </Modal>
 {/if}
 
+{#if showSearch}
+  <Modal onDismiss={() => (showSearch = false)} nopad>
+    <Search />
+  </Modal>
+{/if}
+
 <section
   class:show-content={page.route.id !== "/resources"}
   class:show-nav={page.route.id === "/resources"}
-  inert={page.state.selected}
+  inert={page.state.selected || showSearch}
 >
   <aside>
     <div class="nav-header">
       <h1>Resources</h1>
 
-      <button class="search">
+      <button
+        class="search"
+        onclick={(e) => {
+          e.stopPropagation();
+          showSearch = true;
+        }}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
