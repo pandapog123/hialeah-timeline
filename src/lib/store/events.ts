@@ -43,13 +43,7 @@ export const OGEvents: CommunityEvent[] = [
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government"],
 
-    content: [
-      " ",
-      " ",
-      " ",
-      " ",
-      " ",
-    ],
+    content: [" ", " ", " ", " ", " "],
   },
   {
     id: "8e53cd95-45b1-427c-a87a-2cfe7ae995e3",
@@ -58,54 +52,36 @@ export const OGEvents: CommunityEvent[] = [
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government"],
-    imageURL:
-      " ",
 
-    content: [
-      " ",
-      " ",
-      " ",
-      " ",
-      " ",
-    ],
+    content: [" ", " ", " ", " ", " "],
   },
   {
     id: "946caec1-f26b-4c8e-bc54-510c5d3024df",
     title: "Featured event",
     date: [
-       new Date(2026, 0, 1),
+      new Date(2026, 0, 1),
       new Date(2026, 2, 5),
       "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government", "Arts & Culture", "Community Services & Volunteer"],
-    featured: true,
-    imageURL:
-      " ",
+    imageURL: " ",
 
-    content: [
-      " ",
-      " ",
-      " ",
-      " ",
-      " ",
-    ],
+    content: [" ", " ", " ", " ", " "],
   },
-    {
+  {
     id: "98ef474c-dc0f-4604-8583-285ce7a14e47",
     title: "Wynwood Pride Miami",
     date: [
-       new Date(2026, 0, 1),
+      new Date(2026, 0, 1),
       new Date(2026, 2, 5),
       "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Arts & Culture"],
-    featured: true,
-    imageURL:
-      " ",
+    imageURL: " ",
 
     content: [
       "Event overview: Wynwood Pride Miami is June Pride Celebration that happens annually in Miami's Wynwood Arts District, a vibrant and festive location. This event is the perfect opportunity to display your pride or support for such a marginalized community. While exact dates for 2026 have not yet been confirmed, the festival usually takes place in June (due to it being pride month). The festival typically includes things such as concerts, pool parties, drag pageants, and just any sort of community gathering that highlights the LGBTQ+ community. The festival is organized by a local nonprofit that's committed to promoting acceptance of LGBTQ+ individuals in the community. ",
@@ -115,7 +91,7 @@ export const OGEvents: CommunityEvent[] = [
       " ",
     ],
   },
-    {
+  {
     id: "f15975ce-977f-43cd-ab53-fcc281913924",
     title: "Featured event",
     date: [
@@ -126,184 +102,120 @@ export const OGEvents: CommunityEvent[] = [
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government", "Arts & Culture", "Community Services & Volunteer"],
-    featured: true,
-    imageURL:
-      "/event-images/Pride Parade.png",
+    imageURL: "/event-images/Pride Parade.png",
 
-    content: [
-      " ",
-      " ",
-      " ",
-      " ",
-      " ",
-    ],
+    content: [" ", " ", " ", " ", " "],
   },
-    {
+  {
     id: "ee23d8e9-a8a7-41a6-8a37-9e73858cd3db",
     title: "Featured event",
     date: [
-       new Date(2026, 0, 1),
+      new Date(2026, 0, 1),
       new Date(2026, 2, 5),
       "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government", "Arts & Culture", "Community Services & Volunteer"],
-    featured: true,
-    imageURL:
-      " ",
+    imageURL: " ",
 
-    content: [
-      " ",
-      " ",
-      " ",
-      " ",
-      " ",
-    ],
+    content: [" ", " ", " ", " ", " "],
   },
-    {
+  {
     id: "2aeca350-3dd8-4e9b-aa45-f07362d43258",
     title: "Featured event",
     date: [
-       new Date(2026, 0, 1),
+      new Date(2026, 0, 1),
       new Date(2026, 2, 5),
       "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government", "Arts & Culture", "Community Services & Volunteer"],
-    featured: true,
-    imageURL:
-      " ",
+    imageURL: " ",
 
-    content: [
-      " ",
-      " ",
-      " ",
-      " ",
-      " ",
-    ],
+    content: [" ", " ", " ", " ", " "],
   },
-    {
+  {
     id: "079bdab2-267e-4770-8f94-07dcfb203400",
     title: "Featured event",
     date: [
-       new Date(2026, 0, 1),
+      new Date(2026, 0, 1),
       new Date(2026, 2, 5),
       "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government", "Arts & Culture", "Community Services & Volunteer"],
-    featured: true,
-    imageURL:
-      " ",
+    imageURL: " ",
 
-    content: [
-      " ",
-      " ",
-      " ",
-      " ",
-      " ",
-    ],
+    content: [" ", " ", " ", " ", " "],
   },
-    {
+  {
     id: "bfa47ce7-e35e-450b-892d-a70131fa277f",
     title: "Featured event",
     date: [
-       new Date(2026, 0, 1),
+      new Date(2026, 0, 1),
       new Date(2026, 2, 5),
       "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government", "Arts & Culture", "Community Services & Volunteer"],
-    featured: true,
-    imageURL:
-      " ",
+    imageURL: " ",
 
-    content: [
-      " ",
-      " ",
-      " ",
-      " ",
-      " ",
-    ],
+    content: [" ", " ", " ", " ", " "],
   },
-    {
+  {
     id: "7a46a68a-f3aa-4cdb-9537-5c330e88bb8b",
     title: "Featured event",
     date: [
-       new Date(2026, 0, 1),
+      new Date(2026, 0, 1),
       new Date(2026, 2, 5),
       "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government", "Arts & Culture", "Community Services & Volunteer"],
-    featured: true,
-    imageURL:
-      " ",
+    imageURL: " ",
 
-    content: [
-      " ",
-      " ",
-      " ",
-      " ",
-      " ",
-    ],
+    content: [" ", " ", " ", " ", " "],
   },
-    {
+  {
     id: "d4b08d11-20a1-47fd-92d3-cac611c2ae5b",
     title: "Featured event",
     date: [
-       new Date(2026, 0, 1),
+      new Date(2026, 0, 1),
       new Date(2026, 2, 5),
       "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government", "Arts & Culture", "Community Services & Volunteer"],
-    featured: true,
-    imageURL:
-      " ",
+    imageURL: " ",
 
-    content: [
-      " ",
-      " ",
-      " ",
-      " ",
-      " ",
-    ],
+    content: [" ", " ", " ", " ", " "],
   },
-    {
+  {
     id: "993a3405-77bf-4ec9-a59e-4865b2d636e1",
     title: "Featured event",
     date: [
-       new Date(2026, 0, 1),
+      new Date(2026, 0, 1),
       new Date(2026, 2, 5),
       "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government", "Arts & Culture", "Community Services & Volunteer"],
-    featured: true,
-    imageURL:
-      " ",
+    imageURL: " ",
 
-    content: [
-      " ",
-      " ",
-      " ",
-      " ",
-      " ",
-    ],
+    content: [" ", " ", " ", " ", " "],
   },
-    {
+  {
     id: "64973381-496e-4192-bd42-34c1a3d5fb26",
     title: "Featured event",
     date: [
-       new Date(2026, 0, 1),
+      new Date(2026, 0, 1),
       new Date(2026, 2, 5),
       "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
     ],
@@ -311,16 +223,9 @@ export const OGEvents: CommunityEvent[] = [
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government", "Arts & Culture", "Community Services & Volunteer"],
     featured: true,
-    imageURL:
-      "/event-images/Pride Parade.png",
+    imageURL: "/event-images/Pride Parade.png",
 
-    content: [
-      " ",
-      " ",
-      " ",
-      " ",
-      " ",
-    ],
+    content: [" ", " ", " ", " ", " "],
   },
 ];
 

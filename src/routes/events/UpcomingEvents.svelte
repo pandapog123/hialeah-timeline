@@ -15,14 +15,16 @@
   endDate.setHours(23, 59, 59, 999);
 
   let upcomingEvents = $derived.by<CommunityEvent[]>(() => {
-    return $CommunityEvents.filter((p) => {
-      const inDateRange = p.date.reduce(
-        (p, c) => (c instanceof Date && c > startDate && c < endDate) || p,
-        false,
-      );
+    return $CommunityEvents
+      .filter((p, i) => {
+        const inDateRange = p.date.reduce(
+          (p, c) => (c instanceof Date && c > startDate && c < endDate) || p,
+          false,
+        );
 
-      return inDateRange && !p.featured;
-    });
+        return inDateRange && !p.featured;
+      })
+      .filter((_, i) => i < 4);
   });
 
   function formatEventDates(items: (Date | string)[]) {
