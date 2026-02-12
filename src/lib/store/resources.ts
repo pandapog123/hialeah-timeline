@@ -374,3 +374,5 @@ export function resourceInStore(id: string) {
 
   return false;
 }
+
+export let showSearch = writable(false);

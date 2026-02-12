@@ -8,6 +8,7 @@
     resourceInStoreWithKey,
     resourcesDiff,
     typedResourceKey,
+    showSearch,
   } from "$lib/store/resources";
   import Modal from "./Modal.svelte";
   import Search from "./Search.svelte";
@@ -46,7 +47,7 @@
     })(),
   );
 
-  let showSearch = $state(false);
+  // let $showSearch = $state(false);
 
   $effect(() => {
     for (const key of typedResourceKey($CommunityResources)) {
@@ -68,16 +69,16 @@
   </Modal>
 {/if}
 
-{#if showSearch}
-  <Modal onDismiss={() => (showSearch = false)} nopad>
-    <Search onDismiss={() => (showSearch = false)} />
+{#if $showSearch}
+  <Modal onDismiss={() => ($showSearch = false)} nopad>
+    <Search onDismiss={() => ($showSearch = false)} />
   </Modal>
 {/if}
 
 <section
   class:show-content={page.route.id !== "/resources"}
   class:show-nav={page.route.id === "/resources"}
-  inert={page.state.selected || showSearch}
+  inert={page.state.selected || $showSearch}
 >
   <aside>
     <div class="nav-header">
@@ -87,7 +88,7 @@
         class="search"
         onclick={(e) => {
           e.stopPropagation();
-          showSearch = true;
+          $showSearch = true;
         }}
       >
         <svg

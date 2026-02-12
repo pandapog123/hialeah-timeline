@@ -2,6 +2,7 @@
   import { page } from "$app/state";
   import { writable } from "svelte/store";
   import MenuOverlay from "./MenuOverlay.svelte";
+  import { showSearch } from "$lib/store/resources";
 
   let { children } = $props();
 
@@ -26,7 +27,7 @@
 </svelte:head>
 
 <div class="layout">
-  <header inert={$showMenu || page.state.selected}>
+  <header inert={$showMenu || page.state.selected || $showSearch}>
     <a href="/">
       <img src="/branding/Logo-light.png" alt="Gardens Connect Logo" />
       <h1>Gardens Connect</h1>
@@ -67,7 +68,7 @@
     {@render children()}
   </main>
 
-  <footer inert={$showMenu || page.state.selected}>
+  <footer inert={$showMenu || page.state.selected || $showSearch}>
     <section class="footer-links">
       <ul>
         <h1>Resources</h1>
