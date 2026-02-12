@@ -70,7 +70,7 @@
 
 {#if showSearch}
   <Modal onDismiss={() => (showSearch = false)} nopad>
-    <Search />
+    <Search onDismiss={() => (showSearch = false)} />
   </Modal>
 {/if}
 

@@ -97,6 +97,7 @@
       border-radius: 1rem;
       width: auto;
       height: auto;
+      min-width: 40vw;
     }
   }
 </style>
