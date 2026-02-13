@@ -76,6 +76,23 @@
 <hr />
 
 <div class="content">
+  {#snippet highlight(text: string)}
+    {#if !searchInput.trim()}
+      {text}
+    {:else}
+      {@const escaped = searchInput.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}
+      {@const regex = new RegExp(`(${escaped})`, "gi")}
+
+      {#each text.split(regex) as part}
+        {#if part.match(regex)}
+          <span class="highlight">{part}</span>
+        {:else}
+          {part}
+        {/if}
+      {/each}
+    {/if}
+  {/snippet}
+
   {#each filteredResources as resource, i}
     <a
       href="/resources/{resource[0].id}"
@@ -102,9 +119,9 @@
         </svg>
 
         <div class="resource-title">
-          <h2>{resource[0].title}</h2>
+          <h2>{@render highlight(resource[0].title)}</h2>
 
-          <p>{resource[1]}</p>
+          <p>{@render highlight(resource[1])}</p>
         </div>
       </div>
     </a>
@@ -173,6 +190,15 @@
     display: grid;
     place-content: center;
     flex: 1;
+  }
+
+  .highlight {
+    background-color: rgb(238, 238, 120);
+  }
+
+  a:hover .highlight,
+  a:focus .highlight {
+    background-color: rgb(153, 153, 60);
   }
 
   .search-bar {
