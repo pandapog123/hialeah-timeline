@@ -76,8 +76,8 @@ export const OGEvents: CommunityEvent[] = [
     title: "Wynwood Pride Miami",
     date: [
       new Date(2026, 0, 1),
-      new Date(2026, 2, 5),
-      "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
+      new Date(2026, 5, 5),
+      "Opening night on July 5, 4:00 PM - 8:30 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
@@ -98,7 +98,7 @@ export const OGEvents: CommunityEvent[] = [
     date: [
       new Date(2026, 0, 1),
       new Date(2026, 2, 5),
-      "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
+      "Opening night on Nov 14, 12:00 PM - 6:30 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
@@ -117,7 +117,7 @@ export const OGEvents: CommunityEvent[] = [
     date: [
       new Date(2026, 0, 1),
       new Date(2026, 2, 5),
-      "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
+      "Opening night on Feb 24, 9:00 AM EST",
     ],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
@@ -136,7 +136,7 @@ export const OGEvents: CommunityEvent[] = [
     date: [
       new Date(2026, 0, 1),
       new Date(2026, 2, 5),
-      "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
+      "Opening night on Oct 9, 10:00 AM EST",
     ],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
@@ -155,7 +155,7 @@ export const OGEvents: CommunityEvent[] = [
     date: [
       new Date(2026, 0, 1),
       new Date(2026, 2, 5),
-      "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
+      "Opening on Aug 27, 9:30 AM EST",
     ],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
@@ -173,7 +173,7 @@ export const OGEvents: CommunityEvent[] = [
     date: [
       new Date(2026, 0, 1),
       new Date(2026, 2, 5),
-      "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
+      "Opening on May 7, 2:00 PM - 6:00 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
@@ -191,7 +191,7 @@ export const OGEvents: CommunityEvent[] = [
     date: [
       new Date(2026, 0, 1),
       new Date(2026, 2, 5),
-      "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
+      "Opening on Dec 3, 1:00 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
@@ -209,7 +209,7 @@ export const OGEvents: CommunityEvent[] = [
     date: [
       new Date(2026, 0, 1),
       new Date(2026, 2, 5),
-      "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
+      "Opening night on Mar 28, 3:00 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
@@ -227,7 +227,7 @@ export const OGEvents: CommunityEvent[] = [
     date: [
       new Date(2026, 0, 1),
       new Date(2026, 2, 5),
-      "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
+      "Opening on July 20, 8:30 AM EST",
     ],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
@@ -245,7 +245,7 @@ export const OGEvents: CommunityEvent[] = [
     date: [
       new Date(2026, 0, 1),
       new Date(2026, 2, 5),
-      "Opening night on Jan 24, 6:30 PM - 8:30 PM EST",
+      "Opening on Oct 15, 5:00 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
