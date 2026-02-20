@@ -39,7 +39,7 @@
     </p>
   </div>
 
-  <img src="/gardens/Clock.png" alt="Hialeah Gardens Clock" />
+  <img src="/gardens/Clock.webp" alt="Hialeah Gardens Clock" />
 </section>
 
 <section class="affirmations">
@@ -97,7 +97,7 @@
   <div class="overlay"></div>
 
   <div class="overlay-content">
-    <img src="/branding/Logo-dark.png" alt="Gardens Connect Logo Dark Mode" />
+    <img src="/branding/Logo-dark.webp" alt="Gardens Connect Logo Dark Mode" />
 
     <div class="content">
       <h1>Join our next community event!</h1>

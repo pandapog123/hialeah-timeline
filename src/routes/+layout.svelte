@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-  <link rel="icon" href="/branding/Logo-dark.png" />
+  <link rel="icon" href="/branding/Logo-dark.webp" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +29,7 @@
 <div class="layout">
   <header inert={$showMenu || page.state.selected || $showSearch}>
     <a href="/">
-      <img src="/branding/Logo-light.png" alt="Gardens Connect Logo" />
+      <img src="/branding/Logo-light.webp" alt="Gardens Connect Logo" />
       <h1>Gardens Connect</h1>
     </a>
 
