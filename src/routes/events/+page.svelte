@@ -15,6 +15,7 @@
   import { page } from "$app/state";
   import Modal from "./Modal.svelte";
   import CreateEventPage from "./create/+page.svelte";
+  import Calendar from "./Calendar.svelte";
 
   let searchInput = $state("");
 
@@ -366,6 +367,10 @@
     >
       Clear Custom Events
     </button>
+  {/if}
+
+  {#if searchInput === "" && searchCategories.length === 0 && dateFilter.length === 0}
+    <Calendar />
   {/if}
 </div>
 
