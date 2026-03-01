@@ -200,6 +200,7 @@
   img {
     object-fit: cover;
     max-height: 10rem;
+    max-width: 100%;
   }
 
   .event-info {

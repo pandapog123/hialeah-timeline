@@ -133,7 +133,7 @@
 
   .paragraphs {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 1rem;
   }
 
@@ -178,6 +178,10 @@
     section.content img {
       max-width: 40vw;
       max-height: 20rem;
+    }
+
+    article {
+      padding: 1.5rem;
     }
   }
 </style>
