@@ -65,12 +65,12 @@ export const OGEvents: CommunityEvent[] = [
     id: "98ef474c-dc0f-4604-8583-285ce7a14e47",
     title: "Wynwood Pride Miami",
     date: [
-      new Date(2026, 2, 5),
+      new Date(2026, 5, 12),
       // new Date(2026, 2, 6),
       // "Opening night on July 5, 4:00 PM - 8:30 PM EST",
     ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
+    location: "Wynwood Arts District, Miami, FL",
+    description: "Join Our Annual Pride Parade!",
     tags: ["Arts & Culture"],
     imageURL: "/event-images/Pride Parade.webp",
 
@@ -84,13 +84,10 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "f15975ce-977f-43cd-ab53-fcc281913924",
     title: "Leah Arts District Festival",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 2, 8),
-      // "Opening night on Nov 14, 12:00 PM - 6:30 PM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
+    date: [new Date(2026, 2, 8)],
+    location: "Leah Arts District, Hialeah, FL",
+    description:
+      "Community art festival showcasing murals, live performances, and local vendors",
     tags: ["Arts & Culture", "Youth & Family", "Recreation & Sports"],
     imageURL: "/event-images/Leahart.webp",
 
@@ -103,15 +100,12 @@ export const OGEvents: CommunityEvent[] = [
   },
   {
     id: "ee23d8e9-a8a7-41a6-8a37-9e73858cd3db",
-    title: "Miami Rescue Mission",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 2, 10),
-      // "Opening night on Feb 24, 9:00 AM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: ["Government", "Community Services & Volunteer"],
+    title: "Miami Rescue Mission Volunteer Day",
+    date: [new Date(2026, 2, 10)],
+    location: "Miami Rescue Mission, Miami, FL",
+    description:
+      "Volunteer opportunity supporting individuals experiencing homelessness",
+    tags: ["Community Services & Volunteer"],
     imageURL: "/event-images/Miami Rescue.webp",
 
     content: [
@@ -124,18 +118,11 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "2aeca350-3dd8-4e9b-aa45-f07362d43258",
     title: "Miami International Children’s Book Fair",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 2, 9),
-      // "Opening night on Oct 9, 10:00 AM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: [
-      "Arts & Culture",
-      "Community Services & Volunteer",
-      "Recreation & Sports",
-    ],
+    date: [new Date(2026, 2, 9)],
+    location: "Miami Dade College – Wolfson Campus, Miami, FL",
+    description:
+      "Family-friendly literary event with interactive readings and creative workshops",
+    tags: ["Arts & Culture", "Youth & Family"],
     imageURL: "/event-images/Book Fair Miami.webp",
 
     content: [
@@ -166,14 +153,11 @@ export const OGEvents: CommunityEvent[] = [
   },
   {
     id: "bfa47ce7-e35e-450b-892d-a70131fa277f",
-    title: "Legal Aid Society of Miami",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 2, 13),
-      // "Opening on May 7, 2:00 PM - 6:00 PM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
+    title: "Legal Aid Society of Miami Community Workshop",
+    date: [new Date(2026, 2, 13)],
+    location: "Legal Aid Society of Miami, Miami, FL",
+    description:
+      "Legal assistance workshop providing guidance on rights and community resources",
     tags: ["Government", "Community Services & Volunteer"],
     imageURL: "/event-images/Legal Aid Society.webp",
 
@@ -185,11 +169,12 @@ export const OGEvents: CommunityEvent[] = [
   },
   {
     id: "7a46a68a-f3aa-4cdb-9537-5c330e88bb8b",
-    title: "Chapman Partnership Emergency Housing",
+    title: "Chapman Partnership Volunteer & Outreach Day",
     date: [new Date(2026, 2, 9)],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: ["Government", "Community Services & Volunteer", "Health & Wellness"],
+    location: "Chapman Partnership, Miami, FL",
+    description:
+      "Volunteer event supporting housing and long-term assistance programs",
+    tags: ["Community Services & Volunteer", "Health & Wellness"],
     imageURL: "/event-images/ChapmanHousing.webp",
 
     content: [
@@ -201,13 +186,10 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "d4b08d11-20a1-47fd-92d3-cac611c2ae5b",
     title: "Overtown Music & Arts Festival",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 2, 7),
-      // "Opening night on Mar 28, 3:00 PM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
+    date: [new Date(2026, 2, 7)],
+    location: "Overtown, Miami, FL",
+    description:
+      "Annual music and arts festival celebrating culture, food, and local talent",
     tags: ["Arts & Culture"],
     imageURL: "/event-images/Overtownmusic.webp",
 
@@ -219,14 +201,11 @@ export const OGEvents: CommunityEvent[] = [
   },
   {
     id: "993a3405-77bf-4ec9-a59e-4865b2d636e1",
-    title: "United Way Miami Volunteer Days ",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 2, 4),
-      // "Opening on July 20, 8:30 AM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
+    title: "United Way Miami Volunteer Day",
+    date: [new Date(2026, 2, 14)],
+    location: "Various Locations, Miami-Dade County, FL",
+    description:
+      "Community volunteer event focused on education, health, and neighborhood support",
     tags: ["Community Services & Volunteer"],
     imageURL: "/event-images/Unitedwaymiami.webp",
 
@@ -239,21 +218,17 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "64973381-496e-4192-bd42-34c1a3d5fb26",
     title: "Miami Swim Week",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 2, 1),
-      new Date(2026, 2, 7),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: ["Health & Wellness"],
+    date: [new Date(2026, 2, 1), new Date(2026, 2, 7)],
+    location: "Miami Beach, FL",
+    description:
+      "Multi-day fashion event featuring runway shows, designer showcases, and cultural experiences.",
+    tags: ["Arts & Culture", "Health & Wellness"],
     featured: true,
     imageURL: "/event-images/MiamiSwim.webp",
 
     content: [
       "Miami Swim Week is one of Miami's most significant and popular fashion events. Designers, models, industry workers, and community members from all around Florida gather to witness the uprising of fashion. The event features runway shows, brand sponsored displays/showcases, and beach themed events all regarding the fashion of swim wear and Miami culture. The event is currently scheduled for July 10-15. This multiday festival also centered around culture, is most definitely a cultural spotlight on Miami's coastal identity, local creativity, and even way of life. Most of the shows and pop-up events are created and hosted by residents and vendors. Many of these events even being completely open to the public for viewing and typically hosted in community venues. This gives local residents opportunities to engage with local designers that are within their region and even connect with company founders if they wish to pursue a career in the industry. Obviously, the main attraction of the event is the luxurious fashion shows. However, there are more activities featured that may be fun for families to participate in. There are workshops that may be perfect for aspiring designers and fashionistas, vendor markets where you can find unique fashion statements and pieces most likely exclusive to Miami, and beach parties that are centered around celebrating the diverse culture of the city, lots of artists displaying and selling their artwork, and hospitality businesses that are perfect if you are wishing to stay at a hotel or obtain some cultural food. This event is a social and economic highlight crucial for summertime in Miami.",
-      "Community impact: This event has a very large impact on the community since it brings together different professions for the purpose of fashion and art. Fashion, and art are a significant part of Miami's culture and heritage more specifically swim wear since Miami is a tropical location where beaches and pools are the norm. The event provides economic prosperity for fashion-related professions and brings exposure to small vendors and companies.",
+      "This event has a very large impact on the community since it brings together different professions for the purpose of fashion and art. Fashion, and art are a significant part of Miami's culture and heritage more specifically swim wear since Miami is a tropical location where beaches and pools are the norm. The event provides economic prosperity for fashion-related professions and brings exposure to small vendors and companies.",
       "If you wish to stay updated on the official schedule and various event details, many of the organizers post information on the official website.",
     ],
   },
@@ -282,13 +257,10 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "ec1b4cfb-3a44-444d-9998-43cb4385f130",
     title: "City Hall Meeting",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 2, 18),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
+    date: [new Date(2026, 2, 18)],
+    location: "Hialeah Gardens City Hall, Hialeah Gardens, FL",
+    description:
+      "Public City Council meeting for discussing municipal updates, policies, and community concerns",
     tags: ["Government", "Planning & Zoning"],
     imageURL: "/event-images/CityHallMeeting.jpg",
 
@@ -303,14 +275,11 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "7d32750d-c77b-4655-990c-dfffc4a32bd0",
     title: "Technical Review Committee Meeting",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 2, 3),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
+    date: [new Date(2026, 2, 3)],
     location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: ["Youth & Family", "Recreation & Sports"],
+    description:
+      "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
+    tags: ["Planning & Zoning", "Government"],
     imageURL: "/event-images/TechnicalReviewCommitteeMeeting.jpg",
 
     content: [
@@ -320,13 +289,9 @@ export const OGEvents: CommunityEvent[] = [
     ],
   },
   {
-    id: "ec1b4cfb-3a44-444d-9998-43cb4385f130",
+    id: "c77d4711-bbcc-4d0a-a5c0-16ecf759e46d",
     title: "City Hall Meeting",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 2, 25),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
+    date: [new Date(2026, 2, 25)],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government", "Planning & Zoning"],
@@ -341,16 +306,13 @@ export const OGEvents: CommunityEvent[] = [
     ],
   },
   {
-    id: "7d32750d-c77b-4655-990c-dfffc4a32bd0",
+    id: "f8c92642-7fa4-4a2a-9358-a82d34076d54",
     title: "Technical Review Committee Meeting",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 2, 10),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
+    date: [new Date(2026, 2, 10)],
     location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: ["Youth & Family", "Recreation & Sports"],
+    description:
+      "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
+    tags: ["Planning & Zoning", "Government"],
     imageURL: "/event-images/TechnicalReviewCommitteeMeeting.jpg",
 
     content: [
@@ -360,7 +322,7 @@ export const OGEvents: CommunityEvent[] = [
     ],
   },
   {
-    id: "ec1b4cfb-3a44-444d-9998-43cb4385f130",
+    id: "e8b5e28f-1b57-43e7-935b-12e62c9be559",
     title: "City Hall Meeting",
     date: [
       // new Date(2026, 0, 1),
@@ -381,16 +343,13 @@ export const OGEvents: CommunityEvent[] = [
     ],
   },
   {
-    id: "7d32750d-c77b-4655-990c-dfffc4a32bd0",
+    id: "5f3c558c-dc1d-420e-a4c0-e4d9c74c12e1",
     title: "Technical Review Committee Meeting",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 2, 17),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
+    date: [new Date(2026, 2, 17)],
     location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: ["Youth & Family", "Recreation & Sports"],
+    description:
+      "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
+    tags: ["Planning & Zoning", "Government"],
     imageURL: "/event-images/TechnicalReviewCommitteeMeeting.jpg",
 
     content: [
@@ -400,7 +359,7 @@ export const OGEvents: CommunityEvent[] = [
     ],
   },
   {
-    id: "ec1b4cfb-3a44-444d-9998-43cb4385f130",
+    id: "778544b5-8239-43cf-b325-397ed159d21f",
     title: "City Hall Meeting",
     date: [
       // new Date(2026, 0, 1),
@@ -421,16 +380,13 @@ export const OGEvents: CommunityEvent[] = [
     ],
   },
   {
-    id: "7d32750d-c77b-4655-990c-dfffc4a32bd0",
+    id: "4f509359-d086-41d1-8e27-3c7d4b2ff800",
     title: "Technical Review Committee Meeting",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 2, 24),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
+    date: [new Date(2026, 2, 24)],
     location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: ["Youth & Family", "Recreation & Sports"],
+    description:
+      "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
+    tags: ["Planning & Zoning", "Government"],
     imageURL: "/event-images/TechnicalReviewCommitteeMeeting.jpg",
 
     content: [
@@ -440,7 +396,7 @@ export const OGEvents: CommunityEvent[] = [
     ],
   },
   {
-    id: "ec1b4cfb-3a44-444d-9998-43cb4385f130",
+    id: "828ffd1e-2c35-4c6f-a6bb-7fd24df6673b",
     title: "City Hall Meeting",
     date: [
       // new Date(2026, 0, 1),
@@ -461,16 +417,13 @@ export const OGEvents: CommunityEvent[] = [
     ],
   },
   {
-    id: "7d32750d-c77b-4655-990c-dfffc4a32bd0",
+    id: "b6f246fc-1710-452e-9367-4322d7d46103",
     title: "Technical Review Committee Meeting",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 2, 31),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
+    date: [new Date(2026, 2, 31)],
     location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: ["Youth & Family", "Recreation & Sports"],
+    description:
+      "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
+    tags: ["Planning & Zoning", "Government"],
     imageURL: "/event-images/TechnicalReviewCommitteeMeeting.jpg",
 
     content: [
@@ -480,7 +433,7 @@ export const OGEvents: CommunityEvent[] = [
     ],
   },
   {
-    id: "ec1b4cfb-3a44-444d-9998-43cb4385f130",
+    id: "78eb70ab-17c1-421b-b054-fb1b808a3c43",
     title: "City Hall Meeting",
     date: [
       // new Date(2026, 0, 1),
@@ -501,16 +454,13 @@ export const OGEvents: CommunityEvent[] = [
     ],
   },
   {
-    id: "7d32750d-c77b-4655-990c-dfffc4a32bd0",
+    id: "0ebf2909-5e27-4c23-b9ed-62f5bd56d30c",
     title: "Technical Review Committee Meeting",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 1, 24),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
+    date: [new Date(2026, 1, 24)],
     location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: ["Youth & Family", "Recreation & Sports"],
+    description:
+      "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
+    tags: ["Planning & Zoning", "Government"],
     imageURL: "/event-images/TechnicalReviewCommitteeMeeting.jpg",
 
     content: [
@@ -520,7 +470,7 @@ export const OGEvents: CommunityEvent[] = [
     ],
   },
   {
-    id: "ec1b4cfb-3a44-444d-9998-43cb4385f130",
+    id: "a634a96d-75a3-4b95-ab39-7b7d7a52a922",
     title: "City Hall Meeting",
     date: [
       // new Date(2026, 0, 1),
@@ -541,16 +491,13 @@ export const OGEvents: CommunityEvent[] = [
     ],
   },
   {
-    id: "7d32750d-c77b-4655-990c-dfffc4a32bd0",
+    id: "2878c249-4857-4438-bd09-5205d32cf871",
     title: "Technical Review Committee Meeting",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 3, 7),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
+    date: [new Date(2026, 3, 7)],
     location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: ["Youth & Family", "Recreation & Sports"],
+    description:
+      "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
+    tags: ["Planning & Zoning", "Government"],
     imageURL: "/event-images/TechnicalReviewCommitteeMeeting.jpg",
 
     content: [
@@ -560,7 +507,7 @@ export const OGEvents: CommunityEvent[] = [
     ],
   },
   {
-    id: "ec1b4cfb-3a44-444d-9998-43cb4385f130",
+    id: "9926185b-ac5b-4c0f-ab34-ae2c979905ab",
     title: "City Hall Meeting",
     date: [
       // new Date(2026, 0, 1),
@@ -581,16 +528,13 @@ export const OGEvents: CommunityEvent[] = [
     ],
   },
   {
-    id: "7d32750d-c77b-4655-990c-dfffc4a32bd0",
+    id: "450c3d6b-be5e-4a8f-b887-50cb353c8593",
     title: "Technical Review Committee Meeting",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 1, 17),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
+    date: [new Date(2026, 1, 17)],
     location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: ["Youth & Family", "Recreation & Sports"],
+    description:
+      "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
+    tags: ["Planning & Zoning", "Government"],
     imageURL: "/event-images/TechnicalReviewCommitteeMeeting.jpg",
     content: [
       "The technical review community focuses on city proposals and infrastructure projects city staff collaborate to ensure that proposed projects meet technical standards and follow guidelines to maintain the safety of the community. Many community and state representatives will be there to deliver more information on upcoming news that will be occurring soon. A multitude of collaborators will be meeting to discuss their ideas that will be implemented soon and future plans they have. As of now the main focus is creating more housing all around the Gardens to provide more affordable places to live for low income families. This new project will focus specifically on building new apartment complexes and townhouses.",
@@ -600,15 +544,12 @@ export const OGEvents: CommunityEvent[] = [
   },
   {
     id: "4b8c065d-1df0-4b6a-a81b-913c7522ee47",
-    title: "Spooky Surfing Skeletons Halloween Beach Junior Activity",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 9, 31),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: ["Youth & Family", "Recreation & Sports"],
+    title: "Spooky Surfing Skeletons Halloween Activity",
+    date: [new Date(2026, 9, 31)],
+    location: "Hialeah Gardens Community Center, Hialeah Gardens, FL",
+    description:
+      "A family-friendly Halloween beach-themed celebration featuring costumes, games, surfing activities, and a safe community environment for children ages 5–14",
+    tags: ["Youth & Family"],
     imageURL:
       "/event-images/SpookySurfingSkeletonsHalloweenBeachJuniorActivity.jpg",
 
@@ -622,16 +563,12 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "51cb00dd-3db3-4dc9-9a5b-676b2031ea38",
     title: "Sunshine Winter Carnival",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 11, 21),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
+    date: [new Date(2026, 11, 21)],
+    location: "Hialeah Gardens Municipal Park, Hialeah Gardens, FL",
+    description:
+      "Seasonal winter carnival featuring rides, games, food vendors, entertainment, and family-friendly attractions",
     tags: ["Youth & Family", "Recreation & Sports"],
     imageURL: "/event-images/SunshineWinterCarnival.jpg",
-
     content: [
       "Feeling chilly? Even though we're in Florida and you really shouldn't be complaining we still have the perfect solution for you. Join us at our annual Sunshine Winter Carnival to perfect ways to warm up while having an absolute blast. We have typical carnival things such as rides, games, food, and entertainment, giving residents the opportunity to celebrate the season and enjoying family, friendly activities and a festive time of the year. However you may be thinking what makes us so different from any other carnival at the Gardens. The answer to this question is our various campfires.",
       "Due to living in such a tropical climate many of our residents never got to experience the feeling of going camping and enjoying a warm bonfire with your friends and family. We don't think your region or state should limit you from experiencing such a wonderful bonding moment. With this cold weather dont you wanna just sit by a fire, make smores, and warm up?",
@@ -643,18 +580,11 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "45251c69-a861-4047-8278-89d0f5f86fd2",
     title: "7th Annual Thanks to Give Feast",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 10, 30),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: [
-      "Youth & Family",
-      "Recreation & Sports",
-      "Community Services & Volunteer",
-    ],
+    date: [new Date(2026, 10, 30)],
+    location: "Hialeah Gardens Community Center, Hialeah Gardens, FL",
+    description:
+      "Annual Thanksgiving outreach event providing meals, volunteer opportunities, and community support for families in need",
+    tags: ["Community Services & Volunteer", "Youth & Family"],
     imageURL: "/event-images/AnnualThanksgiving7th.jpg",
 
     content: [
@@ -667,16 +597,12 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "d0835369-5c30-407c-be82-120e8ea67b93",
     title: "Veterans Engagement Fair",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 2, 30),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: ["Community Services & Volunteer"],
+    date: [new Date(2026, 2, 30)],
+    location: "Hialeah Gardens Community Center, Hialeah Gardens, FL",
+    description:
+      "Community fair honoring local veterans and connecting them with support services, resources, and recognition programs",
+    tags: ["Community Services & Volunteer", "Government"],
     imageURL: "/event-images/VeteransEngagementFair.jpg",
-
     content: [
       "The veterans' engagement for honoring local veterans in the gardens area by connecting with valuable resources, services, and programs as well. The event serves as a space to recognize and appreciate our heroes of America, reinforcing the community's commitment to those who have served this wonderful country. In fact many veterans face little to no recognition for their sacrifice and many actually end up homeless or low income since they are unable to work due to physical and mental issues such as disabilities and PTSD.",
       "Many veterans don't even have any living family members because they lost them due to age, diseases, and especially war so they often find themselves alone. Veterans are typically not given financial aid by government officials which is a huge issue in America. Here at Gardens we highly value our veterans for their service and want to commend and appreciate them for the work they did for our nation. A great way to do something positive for your community is to give back to the individuals that are the very reason we have our community today.",
@@ -687,17 +613,12 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "fb249c36-81c8-473f-9e2c-06fa73611322",
     title: "Last Day of Summer Fair",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 8, 16),
-      new Date(2026, 8, 22),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: ["Community Services & Volunteer"],
+    date: [new Date(2026, 8, 16), new Date(2026, 8, 22)],
+    location: "Hialeah Gardens Municipal Park, Hialeah Gardens, FL",
+    description:
+      "End-of-summer community fair featuring entertainment, educational activities, vendors, and family engagement",
+    tags: ["Youth & Family", "Recreation & Sports"],
     imageURL: "/event-images/LastDayOfSummerFair.jpg",
-
     content: [
       "Summer is almost over, celebrate by closing the summer season off with a time at the fair offering entertainment, activities, and community engagement. This event provides families with the final opportunity to say goodbye to this summer while connecting. Many families only have the opportunity to visit each other during vacation seasons like summer and dread the return of school. Or on the other hand many kids only see their friends from other schools primarily during the summer and will be separated once the year begins. The ending of summer is sad for us all but let's try to savor it while it lasts. This event is the perfect opportunity to have a little bit of fun before having to get back into the seriousness demanded by school and academics. In fact this may be a great way to make some new friends that may be attending or will attend your school.",
       "Our event will be mostly activity and play based but we do aim to get our communities children back into academic mode. Due to this we will be hosting some educational activities such as storytime, and we have many educational games to help students regain the skills they may have forgotten throughout the summer. Many local vendors will also have fun cartoon themed school supplies and books for sale to ensure your child goes back to school in style! If you have an older child or teenager don't worry because we also have activities catered to a more older audience. If your child is 13+ they may also serve as a volunteer and earn some community service hours for the following school year. Community service helps showcase that your child is a well-rounded individual that succeeds beyond the classroom. The service tasks will be things such as helping set up for games and activities, helping decorate the event venue, and assisting local vendors.",
@@ -706,16 +627,12 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "710d2710-6527-4d8e-8474-3384028f37e7",
     title: "4th of July Parade (Hialeah Hotdog Contest)",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 6, 4),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
+    date: [new Date(2026, 6, 4)],
+    location: "West Okeechobee Road, Hialeah Gardens, FL",
+    description:
+      "Citywide Independence Day parade featuring live entertainment, vendors, fireworks, and the annual hot dog eating contest",
     tags: ["Community Services & Volunteer"],
     imageURL: "/event-images/4thOfJulyParade.jpg",
-
     content: [
       "The Fourth of July parade is a citywide parade meant to honor the birth of our nation, featuring family activities,games, meet with veterans,performers  and our popular Hialeah hot dog eating contest meant to engage in the good old-fashioned, hot dog, eating competition as well with our guest performer Ricky Martin together to celebrate Independence Day through tradition, entertainment, and civic pride. The event is free to attend but to enroll in the hotdog eating cost there is a $20 fee and local vendors will be selling items throughout the event. The items feature things such as sunglasses, jewelry, accessories, and 4th of July themed snacks and meals.",
       "Anyone is free to attend the event but alcoholic beverages will be available for purchase for individuals of age. However, the event is family friendly and mostly catered to young children and their parents. Anyone is also welcome to participate in the hotdog eating contest but the event will not be held responsible if you or your child gets sick from the volume eaten. If you have a young child please be mindful of them while they are participating to avoid nausea or vomiting. Towards the end of the event we will be having a firework show and that will be the last activity of the night.",
@@ -725,16 +642,12 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "2bb40a65-1a72-45ae-8822-9cc37d84bd46",
     title: "13th Annual African American Juneteenth ",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 5, 19),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: ["Community Services & Volunteer"],
+    date: [new Date(2026, 5, 19)],
+    location: "Hialeah Gardens Municipal Park, Hialeah Gardens, FL",
+    description:
+      "Annual Juneteenth celebration honoring African American history, culture, and community contributions through education and performances.",
+    tags: ["Community Services & Volunteer", "Arts & Culture"],
     imageURL: "/event-images/13thAnnualAfricanAmericaJuneteenth.jpg",
-
     content: [
       "The Juneteenth celebration commemorates the historical significance of the emancipation of enslaved African-Americans, showing recognition to our African-American community here at the garden. This event educates, appreciates, and reflects while honoring African-American history and their contributions to society. At gardens we are primarily a hispanic community and don't often celebrate black history month as much as we should. We aim to remind people of the large sum of African Americans in our community and of their history. It is important to ensure the residents of our community are well educated on the horrors enslaved people had to go through in our own state. We also want to encourage our black residents to share their voice.",
       "The celebration will showcase many informational historical posters, decorations that exhibit black culture, and guest speakers giving lectures on the history of black culture in America and specifically Florida. At our event we also want to empower our African American residents and we will be promoting black owned businesses, vendors, performers, and artists in our very own community. Applications to be featured in our event are still open and the only requirement is to be of African American descent and a current resident of the gardens, if you are interested please send a message to our instagram.",
@@ -744,14 +657,11 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "ee95f392-4055-4f65-b6b1-252e28d89fdf",
     title: "Memorial Day (Off)",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 4, 25),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: ["Community Services & Volunteer"],
+    date: [new Date(2026, 4, 25)],
+    location: "Citywide – Hialeah Gardens, FL",
+    description:
+      "City offices closed in observance of Memorial Day honoring fallen U.S. service members",
+    tags: ["Government"],
     content: [
       "Memorial Day is observed as a national holiday dedicated to honoring fallen military service members. Members' city offices are closed in remembrance, allowing the community time to reflect on sacrifice, service, and national history.",
     ],
@@ -759,14 +669,11 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "c5e0e97a-1c1e-4e6e-8881-3b83efa827ed",
     title: "St Patricks Palm Tree Paloaza sponsored by flangians",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 2, 17),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: ["Youth & Family", "Community Services & Volunteer"],
+    date: [new Date(2026, 2, 17)],
+    location: "Hialeah Gardens Municipal Park, Hialeah Gardens, FL",
+    description:
+      "St. Patrick’s Day celebration blending Irish traditions with local culture, featuring music, activities, and family entertainment",
+    tags: ["Youth & Family"],
     content: [
       "St. Patrick’s Palm Tree Peloza is a festive celebration, blending traditional St. Patrick’s Day themes with local culture, offering events featuring music, activities, and entertainment that bring the community together.",
     ],
@@ -774,14 +681,11 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "894fb797-20af-45d3-a54c-a68dfdc7673f",
     title: "President's Day (Off)",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 1, 16),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: ["Government", "Youth & Family", "Community Services & Volunteer"],
+    date: [new Date(2026, 1, 16)],
+    location: "Citywide – Hialeah Gardens, FL",
+    description:
+      "City offices closed in observance of Presidents’ Day honoring U.S. presidential leadership and national history",
+    tags: ["Government"],
     content: [
       "President day of federal holiday recognized holiday honoring the leadership and legacy of the United States presidents city office are closed in observance, allowing residents to reflect on national history and civic leadership.",
     ],
@@ -789,14 +693,11 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "14c53642-09f1-4195-9d16-0f8a1c380e0b",
     title: "Valentine's Day Senior Raffle",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 1, 14),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
-    tags: ["Government", "Youth & Family", "Community Services & Volunteer"],
+    date: [new Date(2026, 1, 14)],
+    location: "Hialeah Gardens Community Center, Hialeah Gardens, FL",
+    description:
+      "Valentine’s Day community raffle event celebrating senior residents with prizes, social activities, and appreciation.",
+    tags: ["Community Services & Volunteer"],
     content: [
       "The Valentine’s Day Senior Ralph was a community-focused event designed to celebrate and support senior residences. You have been promoted, including appreciation, social engagement with the raffles activities, and community interactions.",
     ],
@@ -804,13 +705,10 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "14c53642-09f1-4195-9d16-0f8a1c380e0b",
     title: "City Council Semi Annual Planning Meeting",
-    date: [
-      // new Date(2026, 0, 1),
-      new Date(2026, 2, 20),
-      // "Opening on Oct 15, 5:00 PM EST",
-    ],
-    location: "Hialeah Gardens City Hall",
-    description: "Official Hialeah Gardens City Council Meeting",
+    date: [new Date(2026, 2, 20)],
+    location: "Hialeah Gardens City Hall, Hialeah Gardens, FL",
+    description:
+      "Strategic City Council planning session reviewing progress, setting priorities, and guiding long-term municipal initiatives.",
     tags: ["Government", "Planning & Zoning"],
     content: [
       "The city council semi annual planning meeting is a strategic session for reviewing progress, setting priorities, and planning future initiatives. These meetings help guide political decisions that shall align with the city's long-term goals.",
