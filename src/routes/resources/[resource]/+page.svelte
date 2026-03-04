@@ -133,7 +133,7 @@
   }
 
   .article {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.7;
     flex: 1;
   }
