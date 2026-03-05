@@ -103,7 +103,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "dc7d601b-41ba-4f59-a0bd-7e6ab35e9dbb",
       title: "Department of Children and Families",
-      imageURL: "/resource-image/brian_diaz.jpg",
+      imageURL: "/resource-image/u_brian_diaz.jpg",
       contacts: [
         {
           name: "Brian Diaz",
@@ -115,7 +115,7 @@ export const OGResources: CommunityResourceList = {
       content: [
         "The Florida Department of Children and Families (DCF) plays a major role in supporting parents and guardians across the state. Through programs focused on child welfare, family safety, and economic assistance, DCF works to ensure children grow up in safe, stable environments. For parents facing financial hardship, DCF administers programs such as Temporary Assistance for Needy Families (TANF), the Supplemental Nutrition Assistance Program (SNAP), and child care support services.",
         "Beyond financial assistance, DCF also provides parenting resources, foster care services, and adoption support. Families experiencing crises can access counseling referrals, substance abuse treatment programs, and protective services. Parenting classes and early intervention services are available in many counties to help caregivers build stronger, healthier family relationships.",
-        `![Family Smiling in a Forest](/resource-image/family_smiling_forest.jpg "Family Smiling in a Forest")`,
+        `![Family Smiling](/resource-image/u_family.jpg "Family Smiling")`,
         "Our local community has loads of different public services we can offer you. We believe that gardens should all be united as a community and thus we should all work together to help each other out. If you are unaware of the various services we offer we recommend you visit our city hall and obtain a pamphlet. The pamphlet will contain all the information you need to ensure that you are educated in ways you can utilize our tools to better your life. If after reading the pamphlet you find yourself still confused feel free to contact anyone in the gardens leadership team.",
         "Parents who need help navigating services can contact their local service center or access information online. Representatives are available to answer questions about eligibility, applications, and ongoing case management.",
       ],
@@ -123,7 +123,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "4d856d4e-fa91-43b0-b5c7-4396deb154f7",
       title: "Department of Health",
-      imageURL: "/resource-image/military_healthcare.jpg",
+      imageURL: "/resource-image/u_front_hospital_office.jpg",
       contacts: [
         {
           name: "Davie O'Niell",
@@ -142,7 +142,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "5d2c30a4-1ecf-4689-b11d-aff1994fc94e",
       title: "Department of Parks and Recreation",
-      imageURL: "/resource-image/volleyball_adult.jpg",
+      imageURL: "/resource-image/u_park_walk.jpg",
       contacts: [
         {
           name: "Johan Tenma",
@@ -155,7 +155,7 @@ export const OGResources: CommunityResourceList = {
         "Local Parks and Recreation Departments play a valuable role in parenting by creating safe spaces where families can connect, learn, and grow together. Through youth sports leagues, after-school programs, summer camps, and family events, these departments support parents by offering structured activities that encourage physical health and social development.",
         "Parent-child programs such as family fitness nights, arts and crafts workshops, and outdoor educational programs help strengthen bonds while promoting healthy lifestyles. Many recreation centers also offer affordable childcare during certain activities, giving parents flexibility and support.",
         "By providing safe, supervised environments, Parks and Recreation Departments contribute to the overall well-being of families and the community. Parents interested in registering for programs or volunteering can contact their local department for more information about seasonal activities and registration deadlines.",
-        `![Children playing Dodgeball](/resource-image/dodgeball_kids.jpg "Children playing dodgeball")`,
+
         "Parks and recreational centers are typically critical for a child's development. At these centers children can learn a multitude of different skills that they will integrate into their future lives. For instance, they make life long friendships while learning key social skills that will allow them to become better communicators and learn how to collaborate with others while working in a team. They also learn how to deal with failure when they lose certain games and work on improving themselves and reflecting on their past mistakes. Nowadays getting a break from screen time is highly important since kids typically don't spend much time away from their devices.",
         "We urge you to sign your child up for activities today or at least take them on a nice visit to one of our local parks. We hope to see you there!",
       ],
@@ -240,7 +240,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "e086dee3-e347-4c19-9269-ff8a3568f594",
       title: "General Children's Health",
-      imageURL: "/resource-image/nurse_and_child.png",
+      imageURL: "/resource-image/u_pediatric_health.jpg",
       contacts: [
         {
           name: "Stephanie Morales",
@@ -265,7 +265,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "f525d957-4770-4769-8a6a-92b0fda88425",
       title: "Health Insurance Resources",
-      imageURL: "/resource-image/elder_pressure_check.png",
+      imageURL: "/resource-image/u_beach_mother.jpg",
       contacts: [
         {
           name: "Aaron Jeger",
@@ -285,7 +285,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "1a715d9f-277d-4901-8d2c-f2136f1fb808",
       title: "Emergency and Urgent Care",
-      imageURL: "/resource-image/er_surgeans.png",
+      imageURL: "/resource-image/u_er_surgeans.png",
       contacts: [
         {
           name: "Edgar Hanma",
@@ -306,7 +306,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "a254e931-ffb0-4558-93c9-b35a528561dc",
       title: "Library & Media Centers",
-      imageURL: "/resource-image/study_hall_library.png",
+      imageURL: "/resource-image/u_library.jpg",
       contacts: [
         {
           name: "Emily Davis",
@@ -325,7 +325,7 @@ export const OGResources: CommunityResourceList = {
         "Our Gardens local library is an extremely useful tool for many parents and guardians since it provides your child with the opportunity to have fun while learning. We urge you to get a library card and obtain many benefits. The benefits include being able to check out any book you please for a month and also having access to the library's many fun activities. Our library also often holds fun educational events where your child can learn and thrive.",
         "Our library also offers many fun clubs where your kid can learn social and developmental skills that will improve their learning while giving them an opportunity to develop a new talent or further interests they may have. These clubs can help your child figure out their strengths and weaknesses and what type of activities and extracurriculars they like and dislike. Our clubs are very diverse and have members ranging in all different ages and types. Our library has a large number of clubs that focus on different things.",
         "Some of our clubs include more common things such as chess club where kids are able to learn the thrilling dynamic of the challenging game and play against others while refining their critical thinking skills and sportsmanship. One of the more popular clubs revolves around books and discusses different genres and what types of books are the most popular as well as debating certain interpretations. However, recently we have seen a rise in more unique clubs that revolve around things like technology and games. This is seen through our new video game club where kids are encouraged to learn coding to build their very own games. Our library also has a club that revolves around TV shows and movies where kids discuss the type of media they like to consume.",
-        `![Woman picks book from library](/resource-image/woman_picking_book.png "Woman picking book from library")`,
+        // `![Woman picks book from library](/resource-image/woman_picking_book.png "Woman picking book from library")`,
         "These clubs are properly funded  by our local government and kids have access to all fun materials needed for their clubs purpose. We supply things such as craft material, computers, and anything that the club may need to thrive. But we are still very accepting of anything extra that you may be willing to donate to ensure our club culture continues to grow. Any donations you may have must be in somewhat new condition and can be dropped off to the front desk at the library to be reviewed before it is implemented in the club.",
         "Don't be shy, join a new club in our library today!",
         "We hope to inspire a new generation of readers and learners that will become well-educated adults.",
@@ -334,7 +334,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "f1a6c71b-3222-493c-a70d-cc91a86c3851",
       title: "Academic Support & Tutoring",
-      imageURL: "/resource-image/tutoring_session.png",
+      imageURL: "/resource-image/u_tutoring_session.png",
       contacts: [
         {
           name: "Maria Lopez",
@@ -355,7 +355,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "2364e9bf-d2b4-40cf-9d9e-e7ecdf0a4b3f",
       title: "After-School & Summer Programs",
-      imageURL: "/resource-image/tutoring_child.png",
+      imageURL: "/resource-image/u_tutor_child.jpg",
       contacts: [
         {
           position: "Summer Program Director",
@@ -383,7 +383,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "76a8a083-ef48-4fce-8c1e-290a0cb8db1d",
       title: "Gardens Community Sports Leagues",
-      imageURL: "/resource-image/student_soccer_game.png",
+      imageURL: "/resource-image/u_soccer_kid.jpg",
       contacts: [
         {
           name: "Brian White",
@@ -408,8 +408,15 @@ export const OGResources: CommunityResourceList = {
     {
       id: "4941c71f-16f3-40b5-90dd-7499143f0ed5",
       title: "Our Local Community",
-      imageURL: "/resource-image/city_view.jpg",
-      contacts: [],
+      imageURL: "/resource-image/u_city_view.jpg",
+      contacts: [
+        {
+          name: "Gatoru Sojo",
+          position: "Head of Local Affairs",
+          email: "strongestoftoday@jujutsuhigh.net",
+          phoneNumber: "(973) 121-1212",
+        },
+      ],
       content: [
         "Gardens is a community that is extremely diverse and welcomes people of all different races and ethnicities. Yet, we are proud to say we are a primarily Hispanic community with over 80% of residents being of Hispanic origin. Naturally, this can be seen all around our community. There are tons of different pieces of Hispanic culture sprinkled around gardens as a whole. Our residents serve food from all over LatinAmerica such as Mexican food, Puerto Rican food, and many more Hispanic nations. We also take our celebration of Hispanic history month very seriously since we wish to preserve our roots and origin. It is very difficult to stroll around gardens without hearing Spanish since it is our second most spoken language.",
         "Our Hispanic culture is also seen throughout our artwork and music. Naturally we have many resources available to young aspiring artists in Gardens. We have many art exhibits and museums that you can apply to participate in. We also have many live music events where you can audition to play and be properly paid for your work. Art is something vital in preserving culture, so we offer many opportunities for artists to promote their work. If you are interested in literature, our book fair has many resources that provide you with things like internships, summer programs, and mentor experience. Strolling around gardens, it's almost impossible to miss the local vendors selling custom made items like paintings and sculptures to visitors from all over the world!",
@@ -419,7 +426,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "85da7c07-cba3-4d4e-8013-d16c3e472876",
       title: "Support Organizations",
-      imageURL: "/resource-image/organization_meeting.jpg",
+      imageURL: "/resource-image/u_organization_meeting.jpg",
       contacts: [
         {
           name: "Travis Cord",
@@ -439,7 +446,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "e82647b6-c8ce-4dc3-a367-980b8335057a",
       title: "Big Brothers Big Sisters",
-      imageURL: "/resource-image/planting_activity.jpg",
+      imageURL: "/resource-image/u_graduation.jpg",
       contacts: [
         {
           name: "Shaggy Wilders",
@@ -458,7 +465,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "a46ad31f-978d-44e0-b69a-0296461e0ab8",
       title: "United Way",
-      imageURL: "/resource-image/united_way_drive.jpg",
+      imageURL: "/resource-image/u_volunteer_drive.jpg",
       contacts: [
         {
           name: "Gitadora Fuji",
@@ -477,7 +484,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "8a0df1ba-daa3-4765-8bdd-d0cc1ad8f4a7",
       title: "The Salvation Army",
-      imageURL: "/resource-image/salvation_army.jpg",
+      imageURL: "/resource-image/u_drive_volunteering.jpg",
       contacts: [
         {
           name: "Jonathan Star",
@@ -499,7 +506,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "69f204b3-669d-43ce-a34c-b1c35f54f154",
       title: "Child Safety Programs",
-      imageURL: "/resource-image/public_worker_smiling.jpg",
+      imageURL: "/resource-image/u_safety_workers.jpg",
       contacts: [
         {
           name: "James Miller",
@@ -524,7 +531,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "4652a125-cfb0-4034-b7ad-187928ac9fb8",
       title: "Miami-Dade Fire Rescue",
-      imageURL: "/resource-image/two_firefighters_walking.jpg",
+      imageURL: "/resource-image/u_firefighters.jpg",
       contacts: [
         {
           name: "Mario De La Torres",
@@ -542,7 +549,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "e7c3681e-faac-4d70-98ab-099a5fd942b8",
       title: "Miami-Dade Police Department",
-      imageURL: "/resource-image/pol_meeting.jpg",
+      imageURL: "/resource-image/u_police.jpg",
       contacts: [
         {
           name: "Yite Lagami",
@@ -562,7 +569,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "964b57b5-46d4-4bda-9ad4-5088a8ba4020",
       title: "Elderly Support Programs",
-      imageURL: "/resource-image/elders_playing.png",
+      imageURL: "/resource-image/u_chess_elder.jpg",
       contacts: [
         {
           name: "Martha Stewart",
@@ -587,7 +594,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "0bebcb87-82f6-43a4-baaa-82d62fb7c9d5",
       title: "Miami-Dade County Elder Affairs",
-      imageURL: "/resource-image/elders_playing.png",
+      imageURL: "/resource-image/u_elder_sitting.jpg",
       contacts: [
         {
           name: "Bryan Casas",
@@ -605,7 +612,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "15cca12a-c417-48fc-a1a6-bc8f037c8810",
       title: "Healthcare and Wellness Programs",
-      imageURL: "/resource-image/elder_healthcare.jpg",
+      imageURL: "/resource-image/u_elder_health.jpg",
       contacts: [
         {
           name: "Dariel Fin",
@@ -625,7 +632,7 @@ export const OGResources: CommunityResourceList = {
     {
       id: "33eda0ec-b323-4a77-a25c-611674411b5a",
       title: "Parent’s Support Programs",
-      imageURL: "/resource-image/family_reading.png",
+      imageURL: "/resource-image/u_family_reading.jpg",
       contacts: [
         {
           name: "Dr. Laura Palmer",

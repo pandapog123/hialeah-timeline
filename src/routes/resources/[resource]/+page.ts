@@ -25,7 +25,7 @@ export const load = ({ params }) => {
   }
 
   return {
-    title: "tst",
+    title: resource.title,
   };
 };
 
