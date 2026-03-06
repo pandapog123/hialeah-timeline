@@ -243,7 +243,7 @@ export const OGEvents: CommunityEvent[] = [
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Arts & Culture"],
     featured: true,
-    imageURL: "/resource-images/u_beach_mother.webp",
+    imageURL: "/resource-image/u_beach_mother.webp",
 
     content: [
       "Join us in our annual Hispanic heritage parade here at the Gardens community, hosted every third Saturday of September as our cultural celebration that honors the history, traditions, and contributions of our Hispanic and Latino community. Providing events featuring performances, music, traditional dishes, and a community coming together as one big Familia.",
