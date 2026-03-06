@@ -129,6 +129,7 @@
     display: flex;
     flex-direction: column-reverse;
     gap: 1rem;
+    font-size: 1.1rem;
   }
 
   .paragraphs {

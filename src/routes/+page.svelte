@@ -21,7 +21,7 @@
     </div>
   </div>
 
-  <img src="/gardens/City Hall.jpeg" alt="Hialeah Gardens City Hall" />
+  <img src="/gardens/hike_friends.webp" alt="Hialeah Gardens City Hall" />
 </section>
 
 <section class="resources">
@@ -39,7 +39,7 @@
     </p>
   </div>
 
-  <img src="/gardens/Clock.webp" alt="Hialeah Gardens Clock" />
+  <img src="/gardens/community.webp" alt="Hialeah Gardens Clock" />
 </section>
 
 <section class="affirmations">
@@ -92,7 +92,7 @@
 </section>
 
 <section class="community-event">
-  <img src="/community/Community Activity.jpg" alt="Community Activity" />
+  <img src="/community/Park.webp" alt="Community Activity" />
 
   <div class="overlay"></div>
 

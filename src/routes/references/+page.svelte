@@ -6,13 +6,7 @@
   <div class="reference">
     <h2>Images</h2>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-  </div>
-
-  <div class="reference">
-    <h2>Hosting</h2>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <a href="https://www.unsplash.com" target="_blank">Unsplash</a>
   </div>
 
   <div class="reference">
@@ -26,7 +20,7 @@
 
     <div class="document-links">
       <a href="/references">Copyright Checklist</a>
-      <a href="/references">Work Log</a>
+      <a href="/files/WEBMASTER WORKLOG.pdf" target="_blank">Work Log</a>
     </div>
   </div>
 </section>

@@ -72,7 +72,7 @@ export const OGEvents: CommunityEvent[] = [
     location: "Wynwood Arts District, Miami, FL",
     description: "Join Our Annual Pride Parade!",
     tags: ["Arts & Culture"],
-    imageURL: "/event-images/Pride Parade.webp",
+    imageURL: "/event-images/pride_parade.webp",
 
     content: [
       "Wynwood Pride Miami is June Pride Celebration that happens annually in Miami's Wynwood Arts District, a vibrant and festive location. This event is the perfect opportunity to display your pride or support for such a marginalized community. While exact dates for 2026 have not yet been confirmed, the festival usually takes place in June (due to it being pride month). The festival typically includes things such as concerts, pool parties, drag pageants, and just any sort of community gathering that highlights the LGBTQ+ community. The festival is organized by a local nonprofit that's committed to promoting acceptance of LGBTQ+ individuals in the community. ",
@@ -89,7 +89,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Community art festival showcasing murals, live performances, and local vendors",
     tags: ["Arts & Culture", "Youth & Family", "Recreation & Sports"],
-    imageURL: "/event-images/Leahart.webp",
+    imageURL: "/event-images/art_convention.webp",
 
     content: [
       "This is an art-related event that features local artists, small businesses, and even live performances. This is an excellent way to connect and engage with other artists and performers in the community. The event takes place only about 15 minutes from Wynwood and features around 30 murals. A multitude of artists from all around Florida gather to share and admire different forms of artwork. Art highlights creativity and diversity and even helps others share their culture. Even if you yourself are not an artist, you can still pass by and enjoy the event to help support local artists in your community. However, if you are in fact an artist, this is the perfect way to get inspiration from different pieces and styles of art and even connect and find people with similar passions as yours.",
@@ -106,8 +106,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Volunteer opportunity supporting individuals experiencing homelessness",
     tags: ["Community Services & Volunteer"],
-    imageURL: "/event-images/Miami Rescue.webp",
-
+    imageURL: "/event-images/homeless_man.webp",
     content: [
       "Offers programs and assistance to those facing homelessness and food sensitivity issues. This organization also offers community service opportunities for those who wish to give back to their community. If you are an individual in a tough situation, you can contact the organization for aid in things such as food, shelter, clothing, and many other factors. The organization offers a wide variety of resources that are accessible to anybody who requires them. If you are a volunteer looking for a way to make a positive impact on your community, Miami Rescue Mission is an excellent option. You can assist in various methods and be given specific tasks that will help aid needy individuals directly. The organization can also provide forms with the amount of hours you completed if your school requires them.",
       "Homelessness and poverty is unfortunately a huge issue in our community. Many individuals, even young children, face issues regarding not being able to access clean water, having to go hungry, and feeling cold due to lack of proper winter equipment throughout months like December. Aid should be accessible to anybody, and this organization helps promote giving back to the community and helping those who are less fortunate. This is also an amazing opportunity for privileged individuals to assist others and put themselves in the perspective of struggling individuals.",
@@ -123,8 +122,8 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Family-friendly literary event with interactive readings and creative workshops",
     tags: ["Arts & Culture", "Youth & Family"],
-    imageURL: "/event-images/Book Fair Miami.webp",
-
+    imageURL: "/event-images/book_fair.webp",
+    featured: true,
     content: [
       "A literary event that offers lots of fun activities for kids such as workshops, interactive reading time, and other educational recreations. Reading is a fundamental activity for kids, and literary events can often result in children bonding with each other over their interests in books. Even if your child does not know how to read yet or is not interested in books, the event also features other activities like workshops. Many of the activities featured tend to be more artistic and allow kids to express their creativity freely and develop artistic skills. This event is extremely educational, and your child may learn loads of different things and broaden their view globally. Here, your child can become more educated and also make tons of friends. This event is perfect for families to get out and bring their kids to a safe place to interact with other children and enjoy themselves while reading books.",
       "In recent years, children have begun to read less and less due to an increase in technology. Naturally, this has resulted in a literary crisis, and many kids all around the globe, especially in Florida, are unable to read at the proper grade level. Events such as these that foster literacy are actively working to improve the growing of issues of kids not reading enough or not reading at the adequate level. This event makes reading more fun and enjoyable for kids because of the various activities and interactive reading.",
@@ -143,7 +142,7 @@ export const OGEvents: CommunityEvent[] = [
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Community Services & Volunteer", "Health & Wellness"],
-    imageURL: "/event-images/Catholic Charities.webp",
+    imageURL: "/event-images/charity_volunteering.webp",
 
     content: [
       "Offers various resources for struggling individuals such as substance abuse programs, food insecurity programs, and immigration services. These charities can offer you aid for almost any sort of issue you may be having. In fact, the organization will also be likely to be able to help you with emotional issues. For example, if you are struggling with substance abuse, they may be able to get you mental help with symptoms like withdrawal. The organization belongs to the catholic religion, but aid is accessible to anybody regardless of their religious beliefs. If you are not catholic, please do not hesitate to contact the charity if you are in need of assistance. If you are a volunteer looking for some community service, you may need to look at the program list, contact the program director, and successfully pass a background check.",
@@ -159,7 +158,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Legal assistance workshop providing guidance on rights and community resources",
     tags: ["Government", "Community Services & Volunteer"],
-    imageURL: "/event-images/Legal Aid Society.webp",
+    imageURL: "/event-images/legal_aid.webp",
 
     content: [
       "A nonprofit law firm that advocates for equal rights in the justice system and fights against legal discrimination. This organization aims to remove legal barriers and foster economic prosperity while creating a more fair and equitable community. The legal system often favors those of higher class and discriminates against racial minorities. This nonprofit organization aims to create a more balanced judicial system and assist those who are wrongly convicted or individuals who are not given a fair trial. The law firm also fights against laws that are unjust. For example, in 1969 they successfully sued the state of Florida and the city of Miami police department to challenge a prejudiced law that criminalized community members experiencing homelessness and joblessness. If you wish to give back to this organization, they are currently accepting donations via mail, online gifting through credit and debit card, and even in cryptocurrency.  If you are a young aspiring attorney or paralegal, the nonprofit also offers a fellowship program where you can participate in a law clerk training program and gain experience in your field. The fellowship will be accepting applications in summer, fall, and winter/spring placements.",
@@ -175,11 +174,11 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Volunteer event supporting housing and long-term assistance programs",
     tags: ["Community Services & Volunteer", "Health & Wellness"],
-    imageURL: "/event-images/ChapmanHousing.webp",
-
+    imageURL: "/event-images/food_picnic.webp",
+    featured: true,
     content: [
       "Chapman Partnership Emergency Housing Aids victims of domestic abuse, veterans, disabled individuals, and youth with housing related issues. They provide dorms, daycares, dental clinics, cafeterias, and even assistance with dogs. The organization is responsible for managing two Homeless Assistance Centers located in Miami and Homestead. This organization can provide a large sum of different types of assistance; however, they specialize in providing more long-term aid. This means that at this organization you will be provided with a stable shelter with all sorts of different resources and even be assisted with medical care. The organization hosts a multitude of events as well such as the “Take A Walk in Her Shoes” happening on May 14th which brings awareness to women specifically mothers who are facing homelessness and it is a fashion focused event. The organization is also very accepting all different types of volunteers, including kids. They even offer pre employment and paid internships to individuals who wish to gain experience in the workforce or strengthen their view of the world. In fact, they are even able to connect unemployed individuals with employers all throughout Miami Dade County and employment specialists as well that are able to find accommodating jobs based on an individual's disability or current condition.",
-      "Community impact: This organization has an extremely huge impact on the community in various ways. They offer a huge number of resources ranging from shelter, food, medical, and family support which can entirely shift an individual's life around. They support all different types of peoples struggles ranging anywhere from struggling mothers to even pet support. The organization is also very accepting volunteers and allows even young children to participate in community service which is vital for developing empathy and social salience.",
+      "This organization has an extremely huge impact on the community in various ways. They offer a huge number of resources ranging from shelter, food, medical, and family support which can entirely shift an individual's life around. They support all different types of peoples struggles ranging anywhere from struggling mothers to even pet support. The organization is also very accepting volunteers and allows even young children to participate in community service which is vital for developing empathy and social salience.",
       "If you wish to learn more about how to gain assistance from the organization or how to volunteer for them, you can visit their official website: https://chapmanpartnership.org/workforce-development/",
     ],
   },
@@ -191,7 +190,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Annual music and arts festival celebrating culture, food, and local talent",
     tags: ["Arts & Culture"],
-    imageURL: "/event-images/Overtownmusic.webp",
+    imageURL: "/event-images/concert_crowd.webp",
 
     content: [
       "The Overtown Music & Arts Festival has been occurring in Miami for six consecutive years now. Which within each year they have provided an unforgettable experience for those who attended with their excellent performances. Not only have they provided a musically enjoyable experience, but they have also fostered economic development by supporting small local artists and enriched the community by bringing groups of individuals together through the art of music. This year especially they aim to bring a more unique blend of music, art, and even culture to a different neighborhood. The event will feature musical performances, different pieces of unique artwork even available for purchase from local vendors, a large sum of ethnic cuisine, and jewelry and crafts that are specific to only South Florida. Artist submissions for this year are currently closed since the list has already been filled up, but you can follow the Instagram page if any spots are made available. Volunteer signups are also closed, but you can continue to follow them on social media in case of future opportunities. The event will be taking place March 28th and is available to anybody free of charge for the entry fee. The event is also considered family friendly and is an avid supporter of fighting against peer pressure, gangs, and drugs. Kids are welcome to attend the event and there is even a “Youth Zone” which a wide range of activities like face painting and bubble shows.",
@@ -207,7 +206,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Community volunteer event focused on education, health, and neighborhood support",
     tags: ["Community Services & Volunteer"],
-    imageURL: "/event-images/Unitedwaymiami.webp",
+    imageURL: "/event-images/volunteer_american.webp",
 
     content: [
       "United Way Miami holds a bunch of different volunteer days throughout the summer. These volunteer events can be centered around things such as education, health, and financial stability. These events can connect volunteers and community members with nonprofit organizations who are in need of willing volunteers to assist with specific tasks or have readily available resources for the needy. Volunteers will be subjected to tasks such as distributing food, school campus preparation as the back to-school season approaches, and even neighborhood clean-ups to better the environment. Volunteering is a great way to get involved in the community and broaden your view of the world while helping others. Summer is the perfect opportunity to use some time valuably and contribute to something positive. If you own a business but wish to contribute to the community, you can partner with Volunteer Miami and have your company host an event. You can choose a topic you are passionate about and benefit your neighborhood while giving your employees an opportunity to make an impact. Many schools also require their students to have a certain number of community service hours for graduation requirements. College applications also value students who have a high number of hours dedicated to volunteer work. Volunteering can also help develop someone's social skills better and even help people make friends. When doing something such as distributing cans of food you interact with others and learn social salience as well as respect and consideration. Although community service is usually directed towards students' adults are also welcome to participate in volunteer work and aid others in need.",
@@ -224,7 +223,7 @@ export const OGEvents: CommunityEvent[] = [
       "Multi-day fashion event featuring runway shows, designer showcases, and cultural experiences.",
     tags: ["Arts & Culture", "Health & Wellness"],
     featured: true,
-    imageURL: "/event-images/MiamiSwim.webp",
+    imageURL: "/event-images/fashion_model.webp",
 
     content: [
       "Miami Swim Week is one of Miami's most significant and popular fashion events. Designers, models, industry workers, and community members from all around Florida gather to witness the uprising of fashion. The event features runway shows, brand sponsored displays/showcases, and beach themed events all regarding the fashion of swim wear and Miami culture. The event is currently scheduled for July 10-15. This multiday festival also centered around culture, is most definitely a cultural spotlight on Miami's coastal identity, local creativity, and even way of life. Most of the shows and pop-up events are created and hosted by residents and vendors. Many of these events even being completely open to the public for viewing and typically hosted in community venues. This gives local residents opportunities to engage with local designers that are within their region and even connect with company founders if they wish to pursue a career in the industry. Obviously, the main attraction of the event is the luxurious fashion shows. However, there are more activities featured that may be fun for families to participate in. There are workshops that may be perfect for aspiring designers and fashionistas, vendor markets where you can find unique fashion statements and pieces most likely exclusive to Miami, and beach parties that are centered around celebrating the diverse culture of the city, lots of artists displaying and selling their artwork, and hospitality businesses that are perfect if you are wishing to stay at a hotel or obtain some cultural food. This event is a social and economic highlight crucial for summertime in Miami.",
@@ -244,7 +243,7 @@ export const OGEvents: CommunityEvent[] = [
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Arts & Culture"],
     featured: true,
-    imageURL: "/event-images/HispanicHeritageParade.jpg",
+    imageURL: "/event-images/HispanicHeritageParade.webp",
 
     content: [
       "Join us in our annual Hispanic heritage parade here at the Gardens community, hosted every third Saturday of September as our cultural celebration that honors the history, traditions, and contributions of our Hispanic and Latino community. Providing events featuring performances, music, traditional dishes, and a community coming together as one big Familia.",
@@ -262,7 +261,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Public City Council meeting for discussing municipal updates, policies, and community concerns",
     tags: ["Government", "Planning & Zoning"],
-    imageURL: "/event-images/CityHallMeeting.jpg",
+    imageURL: "/event-images/meeting.webp",
 
     content: [
       "The City Hall meeting provides an opportunity for residents to engage in discussion regarding operation, upcoming initiatives, and public concerns. These meetings promote civic participation and collaboration between the local government and the community",
@@ -280,7 +279,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
     tags: ["Planning & Zoning", "Government"],
-    imageURL: "/event-images/TechnicalReviewCommitteeMeeting.jpg",
+    imageURL: "/event-images/empty_meeting.webp",
 
     content: [
       "The technical review community focuses on city proposals and infrastructure projects city staff collaborate to ensure that proposed projects meet technical standards and follow guidelines to maintain the safety of the community. Many community and state representatives will be there to deliver more information on upcoming news that will be occurring soon. A multitude of collaborators will be meeting to discuss their ideas that will be implemented soon and future plans they have. As of now the main focus is creating more housing all around the Gardens to provide more affordable places to live for low income families. This new project will focus specifically on building new apartment complexes and townhouses.",
@@ -295,7 +294,7 @@ export const OGEvents: CommunityEvent[] = [
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government", "Planning & Zoning"],
-    imageURL: "/event-images/CityHallMeeting.jpg",
+    imageURL: "/event-images/meeting.webp",
 
     content: [
       "The City Hall meeting provides an opportunity for residents to engage in discussion regarding operation, upcoming initiatives, and public concerns. These meetings promote civic participation and collaboration between the local government and the community",
@@ -313,7 +312,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
     tags: ["Planning & Zoning", "Government"],
-    imageURL: "/event-images/TechnicalReviewCommitteeMeeting.jpg",
+    imageURL: "/event-images/empty_meeting.webp",
 
     content: [
       "The technical review community focuses on city proposals and infrastructure projects city staff collaborate to ensure that proposed projects meet technical standards and follow guidelines to maintain the safety of the community. Many community and state representatives will be there to deliver more information on upcoming news that will be occurring soon. A multitude of collaborators will be meeting to discuss their ideas that will be implemented soon and future plans they have. As of now the main focus is creating more housing all around the Gardens to provide more affordable places to live for low income families. This new project will focus specifically on building new apartment complexes and townhouses.",
@@ -332,7 +331,7 @@ export const OGEvents: CommunityEvent[] = [
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government", "Planning & Zoning"],
-    imageURL: "/event-images/CityHallMeeting.jpg",
+    imageURL: "/event-images/meeting.webp",
 
     content: [
       "The City Hall meeting provides an opportunity for residents to engage in discussion regarding operation, upcoming initiatives, and public concerns. These meetings promote civic participation and collaboration between the local government and the community",
@@ -350,7 +349,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
     tags: ["Planning & Zoning", "Government"],
-    imageURL: "/event-images/TechnicalReviewCommitteeMeeting.jpg",
+    imageURL: "/event-images/empty_meeting.webp",
 
     content: [
       "The technical review community focuses on city proposals and infrastructure projects city staff collaborate to ensure that proposed projects meet technical standards and follow guidelines to maintain the safety of the community. Many community and state representatives will be there to deliver more information on upcoming news that will be occurring soon. A multitude of collaborators will be meeting to discuss their ideas that will be implemented soon and future plans they have. As of now the main focus is creating more housing all around the Gardens to provide more affordable places to live for low income families. This new project will focus specifically on building new apartment complexes and townhouses.",
@@ -369,7 +368,7 @@ export const OGEvents: CommunityEvent[] = [
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government", "Planning & Zoning"],
-    imageURL: "/event-images/CityHallMeeting.jpg",
+    imageURL: "/event-images/meeting.webp",
 
     content: [
       "The City Hall meeting provides an opportunity for residents to engage in discussion regarding operation, upcoming initiatives, and public concerns. These meetings promote civic participation and collaboration between the local government and the community",
@@ -387,7 +386,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
     tags: ["Planning & Zoning", "Government"],
-    imageURL: "/event-images/TechnicalReviewCommitteeMeeting.jpg",
+    imageURL: "/event-images/empty_meeting.webp",
 
     content: [
       "The technical review community focuses on city proposals and infrastructure projects city staff collaborate to ensure that proposed projects meet technical standards and follow guidelines to maintain the safety of the community. Many community and state representatives will be there to deliver more information on upcoming news that will be occurring soon. A multitude of collaborators will be meeting to discuss their ideas that will be implemented soon and future plans they have. As of now the main focus is creating more housing all around the Gardens to provide more affordable places to live for low income families. This new project will focus specifically on building new apartment complexes and townhouses.",
@@ -406,7 +405,7 @@ export const OGEvents: CommunityEvent[] = [
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government", "Planning & Zoning"],
-    imageURL: "/event-images/CityHallMeeting.jpg",
+    imageURL: "/event-images/meeting.webp",
 
     content: [
       "The City Hall meeting provides an opportunity for residents to engage in discussion regarding operation, upcoming initiatives, and public concerns. These meetings promote civic participation and collaboration between the local government and the community",
@@ -424,7 +423,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
     tags: ["Planning & Zoning", "Government"],
-    imageURL: "/event-images/TechnicalReviewCommitteeMeeting.jpg",
+    imageURL: "/event-images/empty_meeting.webp",
 
     content: [
       "The technical review community focuses on city proposals and infrastructure projects city staff collaborate to ensure that proposed projects meet technical standards and follow guidelines to maintain the safety of the community. Many community and state representatives will be there to deliver more information on upcoming news that will be occurring soon. A multitude of collaborators will be meeting to discuss their ideas that will be implemented soon and future plans they have. As of now the main focus is creating more housing all around the Gardens to provide more affordable places to live for low income families. This new project will focus specifically on building new apartment complexes and townhouses.",
@@ -443,7 +442,7 @@ export const OGEvents: CommunityEvent[] = [
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government", "Planning & Zoning"],
-    imageURL: "/event-images/CityHallMeeting.jpg",
+    imageURL: "/event-images/meeting.webp",
 
     content: [
       "The City Hall meeting provides an opportunity for residents to engage in discussion regarding operation, upcoming initiatives, and public concerns. These meetings promote civic participation and collaboration between the local government and the community",
@@ -461,7 +460,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
     tags: ["Planning & Zoning", "Government"],
-    imageURL: "/event-images/TechnicalReviewCommitteeMeeting.jpg",
+    imageURL: "/event-images/empty_meeting.webp",
 
     content: [
       "The technical review community focuses on city proposals and infrastructure projects city staff collaborate to ensure that proposed projects meet technical standards and follow guidelines to maintain the safety of the community. Many community and state representatives will be there to deliver more information on upcoming news that will be occurring soon. A multitude of collaborators will be meeting to discuss their ideas that will be implemented soon and future plans they have. As of now the main focus is creating more housing all around the Gardens to provide more affordable places to live for low income families. This new project will focus specifically on building new apartment complexes and townhouses.",
@@ -480,7 +479,7 @@ export const OGEvents: CommunityEvent[] = [
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government", "Planning & Zoning"],
-    imageURL: "/event-images/CityHallMeeting.jpg",
+    imageURL: "/event-images/meeting.webp",
 
     content: [
       "The City Hall meeting provides an opportunity for residents to engage in discussion regarding operation, upcoming initiatives, and public concerns. These meetings promote civic participation and collaboration between the local government and the community",
@@ -498,7 +497,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
     tags: ["Planning & Zoning", "Government"],
-    imageURL: "/event-images/TechnicalReviewCommitteeMeeting.jpg",
+    imageURL: "/event-images/empty_meeting.webp",
 
     content: [
       "The technical review community focuses on city proposals and infrastructure projects city staff collaborate to ensure that proposed projects meet technical standards and follow guidelines to maintain the safety of the community. Many community and state representatives will be there to deliver more information on upcoming news that will be occurring soon. A multitude of collaborators will be meeting to discuss their ideas that will be implemented soon and future plans they have. As of now the main focus is creating more housing all around the Gardens to provide more affordable places to live for low income families. This new project will focus specifically on building new apartment complexes and townhouses.",
@@ -517,7 +516,7 @@ export const OGEvents: CommunityEvent[] = [
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government", "Planning & Zoning"],
-    imageURL: "/event-images/CityHallMeeting.jpg",
+    imageURL: "/event-images/meeting.webp",
 
     content: [
       "The City Hall meeting provides an opportunity for residents to engage in discussion regarding operation, upcoming initiatives, and public concerns. These meetings promote civic participation and collaboration between the local government and the community",
@@ -535,7 +534,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
     tags: ["Planning & Zoning", "Government"],
-    imageURL: "/event-images/TechnicalReviewCommitteeMeeting.jpg",
+    imageURL: "/event-images/empty_meeting.webp",
     content: [
       "The technical review community focuses on city proposals and infrastructure projects city staff collaborate to ensure that proposed projects meet technical standards and follow guidelines to maintain the safety of the community. Many community and state representatives will be there to deliver more information on upcoming news that will be occurring soon. A multitude of collaborators will be meeting to discuss their ideas that will be implemented soon and future plans they have. As of now the main focus is creating more housing all around the Gardens to provide more affordable places to live for low income families. This new project will focus specifically on building new apartment complexes and townhouses.",
       "We hope that this new housing plan is beneficial to families that have been struggling to obtain housing that is not extremely costly. With this new plan we aim to decrease homelessness rates and give individuals the security of a stable shelter. There are also many plans for community infrastructure as a whole. Many new small businesses have not been able to find places to sell their products. With this information we plan to create a new shopping center featuring stores like Walmart, Burlington, 5 below, and a large sum of small family owned businesses. We also aim to encourage walking instead of using vehicles since it improves health and is better for the environment, due to this we will try to create close together buildings that make something as simple as going to the grocery store only a five minute walk. This will be an extreme positive change that will get gardens moving again and reduce our pollution extremely.",
@@ -550,8 +549,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "A family-friendly Halloween beach-themed celebration featuring costumes, games, surfing activities, and a safe community environment for children ages 5–14",
     tags: ["Youth & Family"],
-    imageURL:
-      "/event-images/SpookySurfingSkeletonsHalloweenBeachJuniorActivity.jpg",
+    imageURL: "/event-images/halloween.webp",
 
     content: [
       "Boo! come to our spooky surfing, skeleton Halloween activity for ages 5-14, connecting seasonal fun with Floridian activities and a safe and friendly environment. The event includes themed games, costumes, and our palm tree not-so-spooky house, providing creativity, social engagement, and involvement throughout the community",
@@ -568,7 +566,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Seasonal winter carnival featuring rides, games, food vendors, entertainment, and family-friendly attractions",
     tags: ["Youth & Family", "Recreation & Sports"],
-    imageURL: "/event-images/SunshineWinterCarnival.jpg",
+    imageURL: "/event-images/theme_park.webp",
     content: [
       "Feeling chilly? Even though we're in Florida and you really shouldn't be complaining we still have the perfect solution for you. Join us at our annual Sunshine Winter Carnival to perfect ways to warm up while having an absolute blast. We have typical carnival things such as rides, games, food, and entertainment, giving residents the opportunity to celebrate the season and enjoying family, friendly activities and a festive time of the year. However you may be thinking what makes us so different from any other carnival at the Gardens. The answer to this question is our various campfires.",
       "Due to living in such a tropical climate many of our residents never got to experience the feeling of going camping and enjoying a warm bonfire with your friends and family. We don't think your region or state should limit you from experiencing such a wonderful bonding moment. With this cold weather dont you wanna just sit by a fire, make smores, and warm up?",
@@ -585,7 +583,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Annual Thanksgiving outreach event providing meals, volunteer opportunities, and community support for families in need",
     tags: ["Community Services & Volunteer", "Youth & Family"],
-    imageURL: "/event-images/AnnualThanksgiving7th.jpg",
+    imageURL: "/event-images/thanksgiving.webp",
 
     content: [
       "Give Feast is an annual outreach program dedicated to supporting lower-income families with any need during the holidays, providing more meals and community support, emphasizing generosity, and providing a time of need. The perfect thing to do this thanksgiving is show your gratitude for having a warm meal and snacks every single day is to give back to your community during the holiday season. We encourage you to donate any sort of food item that you have in your possession and is unopened. Some of the things we recommend donating the most due to their longevity and health reasons is canned items, fruits and vegetables, and other nutritious food.",
@@ -602,7 +600,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Community fair honoring local veterans and connecting them with support services, resources, and recognition programs",
     tags: ["Community Services & Volunteer", "Government"],
-    imageURL: "/event-images/VeteransEngagementFair.jpg",
+    imageURL: "/event-images/veteran.webp",
     content: [
       "The veterans' engagement for honoring local veterans in the gardens area by connecting with valuable resources, services, and programs as well. The event serves as a space to recognize and appreciate our heroes of America, reinforcing the community's commitment to those who have served this wonderful country. In fact many veterans face little to no recognition for their sacrifice and many actually end up homeless or low income since they are unable to work due to physical and mental issues such as disabilities and PTSD.",
       "Many veterans don't even have any living family members because they lost them due to age, diseases, and especially war so they often find themselves alone. Veterans are typically not given financial aid by government officials which is a huge issue in America. Here at Gardens we highly value our veterans for their service and want to commend and appreciate them for the work they did for our nation. A great way to do something positive for your community is to give back to the individuals that are the very reason we have our community today.",
@@ -618,7 +616,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "End-of-summer community fair featuring entertainment, educational activities, vendors, and family engagement",
     tags: ["Youth & Family", "Recreation & Sports"],
-    imageURL: "/event-images/LastDayOfSummerFair.jpg",
+    imageURL: "/event-images/summer.webp",
     content: [
       "Summer is almost over, celebrate by closing the summer season off with a time at the fair offering entertainment, activities, and community engagement. This event provides families with the final opportunity to say goodbye to this summer while connecting. Many families only have the opportunity to visit each other during vacation seasons like summer and dread the return of school. Or on the other hand many kids only see their friends from other schools primarily during the summer and will be separated once the year begins. The ending of summer is sad for us all but let's try to savor it while it lasts. This event is the perfect opportunity to have a little bit of fun before having to get back into the seriousness demanded by school and academics. In fact this may be a great way to make some new friends that may be attending or will attend your school.",
       "Our event will be mostly activity and play based but we do aim to get our communities children back into academic mode. Due to this we will be hosting some educational activities such as storytime, and we have many educational games to help students regain the skills they may have forgotten throughout the summer. Many local vendors will also have fun cartoon themed school supplies and books for sale to ensure your child goes back to school in style! If you have an older child or teenager don't worry because we also have activities catered to a more older audience. If your child is 13+ they may also serve as a volunteer and earn some community service hours for the following school year. Community service helps showcase that your child is a well-rounded individual that succeeds beyond the classroom. The service tasks will be things such as helping set up for games and activities, helping decorate the event venue, and assisting local vendors.",
@@ -632,7 +630,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Citywide Independence Day parade featuring live entertainment, vendors, fireworks, and the annual hot dog eating contest",
     tags: ["Community Services & Volunteer"],
-    imageURL: "/event-images/4thOfJulyParade.jpg",
+    imageURL: "/event-images/4th_of_july.webp",
     content: [
       "The Fourth of July parade is a citywide parade meant to honor the birth of our nation, featuring family activities,games, meet with veterans,performers  and our popular Hialeah hot dog eating contest meant to engage in the good old-fashioned, hot dog, eating competition as well with our guest performer Ricky Martin together to celebrate Independence Day through tradition, entertainment, and civic pride. The event is free to attend but to enroll in the hotdog eating cost there is a $20 fee and local vendors will be selling items throughout the event. The items feature things such as sunglasses, jewelry, accessories, and 4th of July themed snacks and meals.",
       "Anyone is free to attend the event but alcoholic beverages will be available for purchase for individuals of age. However, the event is family friendly and mostly catered to young children and their parents. Anyone is also welcome to participate in the hotdog eating contest but the event will not be held responsible if you or your child gets sick from the volume eaten. If you have a young child please be mindful of them while they are participating to avoid nausea or vomiting. Towards the end of the event we will be having a firework show and that will be the last activity of the night.",
@@ -647,7 +645,7 @@ export const OGEvents: CommunityEvent[] = [
     description:
       "Annual Juneteenth celebration honoring African American history, culture, and community contributions through education and performances.",
     tags: ["Community Services & Volunteer", "Arts & Culture"],
-    imageURL: "/event-images/13thAnnualAfricanAmericaJuneteenth.jpg",
+    imageURL: "/event-images/freedom_march.webp",
     content: [
       "The Juneteenth celebration commemorates the historical significance of the emancipation of enslaved African-Americans, showing recognition to our African-American community here at the garden. This event educates, appreciates, and reflects while honoring African-American history and their contributions to society. At gardens we are primarily a hispanic community and don't often celebrate black history month as much as we should. We aim to remind people of the large sum of African Americans in our community and of their history. It is important to ensure the residents of our community are well educated on the horrors enslaved people had to go through in our own state. We also want to encourage our black residents to share their voice.",
       "The celebration will showcase many informational historical posters, decorations that exhibit black culture, and guest speakers giving lectures on the history of black culture in America and specifically Florida. At our event we also want to empower our African American residents and we will be promoting black owned businesses, vendors, performers, and artists in our very own community. Applications to be featured in our event are still open and the only requirement is to be of African American descent and a current resident of the gardens, if you are interested please send a message to our instagram.",
