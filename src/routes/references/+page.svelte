@@ -12,7 +12,8 @@
   <div class="reference">
     <h2>Sources</h2>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <a href="/files/References.pdf" target="_blank">Sources List</a>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
   </div>
 
   <div class="reference">
