@@ -94,7 +94,7 @@
 
     <hr />
 
-    <p class="footer-copyright">© 2025, Gardens Connect • Established 2025</p>
+    <p class="footer-copyright">© 2026, Gardens Connect • Established 2025</p>
   </footer>
 </div>
 

@@ -20,7 +20,9 @@
     <h2>Documents</h2>
 
     <div class="document-links">
-      <a href="/references">Copyright Checklist</a>
+      <a href="/files/forms_appendix_one_page.pdf" target="_blank"
+        >Copyright Checklist</a
+      >
       <a href="/files/WEBMASTER WORKLOG.pdf" target="_blank">Work Log</a>
     </div>
   </div>
