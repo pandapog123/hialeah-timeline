@@ -1,0 +1,1 @@
+import{_ as a}from"../chunks/DWBOp4-g.js";const e=!0,r=async()=>({title:"Create Resource"}),t=Object.freeze(Object.defineProperty({__proto__:null,load:r,prerender:e},Symbol.toStringTag,{value:"Module"}));export{a as component,t as universal};
