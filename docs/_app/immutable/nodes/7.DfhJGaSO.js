@@ -1,1 +1,0 @@
-import{_ as a}from"../chunks/DIdiD3Pq.js";const e=!0,t=async()=>({title:"Create Event"}),r=Object.freeze(Object.defineProperty({__proto__:null,load:t,prerender:e},Symbol.toStringTag,{value:"Module"}));export{a as component,r as universal};

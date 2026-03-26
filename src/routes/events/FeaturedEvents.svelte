@@ -22,7 +22,8 @@
           false,
         );
 
-        return inDateRange && p.featured;
+        return p.featured;
+        // inDateRange &&
       })
       .filter((_, i) => i < 4);
   });
