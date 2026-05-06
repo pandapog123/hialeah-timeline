@@ -180,13 +180,13 @@
           </div>
         </li>
 
-        {#if i !== Object.keys($CommunityResources).length - 1 || resourcesDiff($CommunityResources)}
+        {#if i !== Object.keys($CommunityResources).length - 1 || resourcesDiff(OGResources, $CommunityResources)}
           <hr />
         {/if}
       {/each}
     </ul>
 
-    {#if resourcesDiff($CommunityResources)}
+    {#if resourcesDiff(OGResources, $CommunityResources)}
       <button
         class="clear"
         onclick={() => {

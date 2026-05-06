@@ -719,9 +719,9 @@ export let CommunityResources: Writable<CommunityResourceList> = writable(
   OGResources,
   (set, update) => {
     if (browser) {
-      if (dev) {
-        localStorage.removeItem("COMMUNITY_RESOURCES"); // Remove in prod
-      }
+      // if (dev) {
+      //   localStorage.removeItem("COMMUNITY_RESOURCES"); // Remove in prod
+      // }
 
       let localCommunityResources = localStorage.getItem("COMMUNITY_RESOURCES");
 
@@ -774,9 +774,12 @@ CommunityResources.subscribe((ce) => {
   }
 });
 
-export function resourcesDiff(resources: CommunityResourceList) {
+export function resourcesDiff(
+  og: CommunityResourceList,
+  resources: CommunityResourceList,
+) {
   for (const c of typedResourceKey(resources)) {
-    if (resources[c].length !== OGResources[c].length) {
+    if (resources[c].length !== og[c].length) {
       return true;
     }
   }
