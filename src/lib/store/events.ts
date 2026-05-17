@@ -84,7 +84,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "f15975ce-977f-43cd-ab53-fcc281913924",
     title: "Leah Arts District Festival",
-    date: [new Date(2026, 2, 8)],
+    date: [new Date(2026, 5, 5)],
     location: "Leah Arts District, Hialeah, FL",
     description:
       "Community art festival showcasing murals, live performances, and local vendors",
@@ -101,7 +101,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "ee23d8e9-a8a7-41a6-8a37-9e73858cd3db",
     title: "Miami Rescue Mission Volunteer Day",
-    date: [new Date(2026, 2, 10)],
+    date: [new Date(2026, 5, 6)],
     location: "Miami Rescue Mission, Miami, FL",
     description:
       "Volunteer opportunity supporting individuals experiencing homelessness",
@@ -117,7 +117,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "2aeca350-3dd8-4e9b-aa45-f07362d43258",
     title: "Miami International Children’s Book Fair",
-    date: [new Date(2026, 2, 9)],
+    date: [new Date(2026, 5, 8)],
     location: "Miami Dade College – Wolfson Campus, Miami, FL",
     description:
       "Family-friendly literary event with interactive readings and creative workshops",
@@ -136,7 +136,7 @@ export const OGEvents: CommunityEvent[] = [
     title: "Catholic Charities of Miami",
     date: [
       // new Date(2026, 0, 1),
-      new Date(2026, 2, 15),
+      new Date(2026, 5, 9),
       // "Opening on Aug 27, 9:30 AM EST",
     ],
     location: "Hialeah Gardens City Hall",
@@ -153,7 +153,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "bfa47ce7-e35e-450b-892d-a70131fa277f",
     title: "Legal Aid Society of Miami Community Workshop",
-    date: [new Date(2026, 2, 13)],
+    date: [new Date(2026, 5, 10)],
     location: "Legal Aid Society of Miami, Miami, FL",
     description:
       "Legal assistance workshop providing guidance on rights and community resources",
@@ -169,7 +169,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "7a46a68a-f3aa-4cdb-9537-5c330e88bb8b",
     title: "Chapman Partnership Volunteer & Outreach Day",
-    date: [new Date(2026, 2, 9)],
+    date: [new Date(2026, 5, 11)],
     location: "Chapman Partnership, Miami, FL",
     description:
       "Volunteer event supporting housing and long-term assistance programs",
@@ -185,7 +185,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "d4b08d11-20a1-47fd-92d3-cac611c2ae5b",
     title: "Overtown Music & Arts Festival",
-    date: [new Date(2026, 2, 7)],
+    date: [new Date(2026, 5, 13)],
     location: "Overtown, Miami, FL",
     description:
       "Annual music and arts festival celebrating culture, food, and local talent",
@@ -201,7 +201,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "993a3405-77bf-4ec9-a59e-4865b2d636e1",
     title: "United Way Miami Volunteer Day",
-    date: [new Date(2026, 2, 14)],
+    date: [new Date(2026, 5, 14)],
     location: "Various Locations, Miami-Dade County, FL",
     description:
       "Community volunteer event focused on education, health, and neighborhood support",
@@ -217,7 +217,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "64973381-496e-4192-bd42-34c1a3d5fb26",
     title: "Miami Swim Week",
-    date: [new Date(2026, 2, 1), new Date(2026, 2, 7)],
+    date: [new Date(2026, 5, 15), new Date(2026, 5, 21)],
     location: "Miami Beach, FL",
     description:
       "Multi-day fashion event featuring runway shows, designer showcases, and cultural experiences.",
@@ -236,7 +236,7 @@ export const OGEvents: CommunityEvent[] = [
     title: "Hispanic Heritage Parade",
     date: [
       // new Date(2026, 0, 1),
-      new Date(2026, 2, 2),
+      new Date(2026, 8, 19),
       // "Opening on Oct 15, 5:00 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
@@ -256,7 +256,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "ec1b4cfb-3a44-444d-9998-43cb4385f130",
     title: "City Hall Meeting",
-    date: [new Date(2026, 2, 18)],
+    date: [new Date(2026, 4, 20)],
     location: "Hialeah Gardens City Hall, Hialeah Gardens, FL",
     description:
       "Public City Council meeting for discussing municipal updates, policies, and community concerns",
@@ -274,7 +274,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "7d32750d-c77b-4655-990c-dfffc4a32bd0",
     title: "Technical Review Committee Meeting",
-    date: [new Date(2026, 2, 3)],
+    date: [new Date(2026, 4, 19)],
     location: "Hialeah Gardens City Hall",
     description:
       "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
@@ -290,7 +290,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "c77d4711-bbcc-4d0a-a5c0-16ecf759e46d",
     title: "City Hall Meeting",
-    date: [new Date(2026, 2, 25)],
+    date: [new Date(2026, 4, 27)],
     location: "Hialeah Gardens City Hall",
     description: "Official Hialeah Gardens City Council Meeting",
     tags: ["Government", "Planning & Zoning"],
@@ -307,7 +307,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "f8c92642-7fa4-4a2a-9358-a82d34076d54",
     title: "Technical Review Committee Meeting",
-    date: [new Date(2026, 2, 10)],
+    date: [new Date(2026, 4, 26)],
     location: "Hialeah Gardens City Hall",
     description:
       "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
@@ -325,7 +325,7 @@ export const OGEvents: CommunityEvent[] = [
     title: "City Hall Meeting",
     date: [
       // new Date(2026, 0, 1),
-      new Date(2026, 3, 1),
+      new Date(2026, 4, 29),
       // "Opening on Oct 15, 5:00 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
@@ -344,7 +344,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "5f3c558c-dc1d-420e-a4c0-e4d9c74c12e1",
     title: "Technical Review Committee Meeting",
-    date: [new Date(2026, 2, 17)],
+    date: [new Date(2026, 4, 28)],
     location: "Hialeah Gardens City Hall",
     description:
       "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
@@ -362,7 +362,7 @@ export const OGEvents: CommunityEvent[] = [
     title: "City Hall Meeting",
     date: [
       // new Date(2026, 0, 1),
-      new Date(2026, 2, 11),
+      new Date(2026, 4, 31),
       // "Opening on Oct 15, 5:00 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
@@ -381,7 +381,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "4f509359-d086-41d1-8e27-3c7d4b2ff800",
     title: "Technical Review Committee Meeting",
-    date: [new Date(2026, 2, 24)],
+    date: [new Date(2026, 4, 30)],
     location: "Hialeah Gardens City Hall",
     description:
       "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
@@ -399,7 +399,7 @@ export const OGEvents: CommunityEvent[] = [
     title: "City Hall Meeting",
     date: [
       // new Date(2026, 0, 1),
-      new Date(2026, 2, 4),
+      new Date(2026, 5, 3),
       // "Opening on Oct 15, 5:00 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
@@ -418,7 +418,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "b6f246fc-1710-452e-9367-4322d7d46103",
     title: "Technical Review Committee Meeting",
-    date: [new Date(2026, 2, 31)],
+    date: [new Date(2026, 5, 2)],
     location: "Hialeah Gardens City Hall",
     description:
       "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
@@ -436,7 +436,7 @@ export const OGEvents: CommunityEvent[] = [
     title: "City Hall Meeting",
     date: [
       // new Date(2026, 0, 1),
-      new Date(2026, 1, 25),
+      new Date(2026, 4, 17),
       // "Opening on Oct 15, 5:00 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
@@ -455,7 +455,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "0ebf2909-5e27-4c23-b9ed-62f5bd56d30c",
     title: "Technical Review Committee Meeting",
-    date: [new Date(2026, 1, 24)],
+    date: [new Date(2026, 4, 16)],
     location: "Hialeah Gardens City Hall",
     description:
       "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
@@ -473,7 +473,7 @@ export const OGEvents: CommunityEvent[] = [
     title: "City Hall Meeting",
     date: [
       // new Date(2026, 0, 1),
-      new Date(2026, 3, 8),
+      new Date(2026, 5, 17),
       // "Opening on Oct 15, 5:00 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
@@ -492,7 +492,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "2878c249-4857-4438-bd09-5205d32cf871",
     title: "Technical Review Committee Meeting",
-    date: [new Date(2026, 3, 7)],
+    date: [new Date(2026, 5, 16)],
     location: "Hialeah Gardens City Hall",
     description:
       "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
@@ -510,7 +510,7 @@ export const OGEvents: CommunityEvent[] = [
     title: "City Hall Meeting",
     date: [
       // new Date(2026, 0, 1),
-      new Date(2026, 1, 18),
+      new Date(2026, 5, 24),
       // "Opening on Oct 15, 5:00 PM EST",
     ],
     location: "Hialeah Gardens City Hall",
@@ -529,7 +529,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "450c3d6b-be5e-4a8f-b887-50cb353c8593",
     title: "Technical Review Committee Meeting",
-    date: [new Date(2026, 1, 17)],
+    date: [new Date(2026, 5, 23)],
     location: "Hialeah Gardens City Hall",
     description:
       "Committee meeting reviewing city development proposals, zoning applications, and infrastructure plans",
@@ -578,7 +578,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "45251c69-a861-4047-8278-89d0f5f86fd2",
     title: "7th Annual Thanks to Give Feast",
-    date: [new Date(2026, 10, 30)],
+    date: [new Date(2026, 10, 26)],
     location: "Hialeah Gardens Community Center, Hialeah Gardens, FL",
     description:
       "Annual Thanksgiving outreach event providing meals, volunteer opportunities, and community support for families in need",
@@ -595,7 +595,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "d0835369-5c30-407c-be82-120e8ea67b93",
     title: "Veterans Engagement Fair",
-    date: [new Date(2026, 2, 30)],
+    date: [new Date(2026, 10, 11)],
     location: "Hialeah Gardens Community Center, Hialeah Gardens, FL",
     description:
       "Community fair honoring local veterans and connecting them with support services, resources, and recognition programs",
@@ -611,7 +611,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "fb249c36-81c8-473f-9e2c-06fa73611322",
     title: "Last Day of Summer Fair",
-    date: [new Date(2026, 8, 16), new Date(2026, 8, 22)],
+    date: [new Date(2026, 8, 17), new Date(2026, 8, 22)],
     location: "Hialeah Gardens Municipal Park, Hialeah Gardens, FL",
     description:
       "End-of-summer community fair featuring entertainment, educational activities, vendors, and family engagement",
@@ -703,7 +703,7 @@ export const OGEvents: CommunityEvent[] = [
   {
     id: "14c53642-09f1-4195-9d16-0f8a1c380e0b",
     title: "City Council Semi Annual Planning Meeting",
-    date: [new Date(2026, 2, 20)],
+    date: [new Date(2026, 4, 24)],
     location: "Hialeah Gardens City Hall, Hialeah Gardens, FL",
     description:
       "Strategic City Council planning session reviewing progress, setting priorities, and guiding long-term municipal initiatives.",
